@@ -60,15 +60,18 @@
 
 @media (max-width: 1199px) {
   .u-section-1 .u-image-1 {
-    margin-left: calc(((100% - 1140px) / 2) + 301px);
+    margin-top: 44px;
+    margin-left: calc(((100% - 940px) / 2));
   }
 
   .u-section-1 .u-custom-html-1 {
-    margin-right: calc(((100% - 1140px) / 2) + 185px);
-    margin-left: calc(((100% - 1140px) / 2) + 385px);
+    margin-top: -105px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .u-section-1 .u-accordion-1 {
+    margin-top: 0;
     margin-right: initial;
     margin-left: initial;
   }

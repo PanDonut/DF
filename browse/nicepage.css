@@ -33869,16 +33869,20 @@ a.u-link.u-text-hover-grey-90:hover {
   margin: -67px auto 3px 0;
 }
 @media (max-width: 1199px) {
+  .u-header {
+    min-height: 71px;
+  }
+
   .u-header .u-custom-html-1 {
     height: auto;
-    width: 940px;
-    margin-left: calc(((100% - 940px) / 2));
-    margin-right: calc(((100% - 940px) / 2));
+    width: 863px;
+    margin-left: calc(((100% - 940px) / 2) + 77px);
   }
 
   .u-header .u-video-1 {
     width: calc(((100% - 940px) / 2) + 44px);
     margin-top: -67px;
+    margin-bottom: 4px;
   }
 }
 @media (max-width: 991px) {

@@ -36128,6 +36128,7 @@ a.u-link.u-text-hover-grey-90:hover {
   width: 333px;
   min-height: 58px;
   height: auto;
+  animation-duration: 1000ms;
   margin: -45px auto 3px 288px;
 }
 
@@ -36153,6 +36154,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-header .u-text-3 {
   font-size: 0.875rem;
+  animation-duration: 1000ms;
   margin: -6px auto 0 96px;
 }
 @media (max-width: 1199px) {

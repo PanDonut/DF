@@ -36096,12 +36096,12 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-sheet-1 {
-  min-height: 61px;
+  min-height: 63px;
 }
 
 .u-header .u-image-1 {
   animation-duration: 1000ms;
-  margin: 10px auto 0 -65px;
+  margin: 11px auto 0 -65px;
 }
 
 .u-header .u-logo-image-1 {
@@ -36113,12 +36113,51 @@ a.u-link.u-text-hover-grey-90:hover {
   width: 40px;
   height: 40px;
   animation-duration: 1000ms;
-  margin: -41px -63px 10px auto;
+  margin: -41px -63px 0 auto;
+}
+
+.u-header .u-menu-1 {
+  margin: -36px -12px 0 auto;
+}
+
+.u-header .u-nav-2 {
+  font-size: 1.25rem;
+}
+
+.u-header .u-group-1 {
+  width: 333px;
+  min-height: 58px;
+  height: auto;
+  margin: -45px auto 3px 288px;
+}
+
+.u-header .u-container-layout-1 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.u-header .u-image-2 {
+  width: 93px;
+  left: 0;
+  right: auto;
+}
+
+.u-header .u-text-1 {
+  font-size: 1rem;
+  margin: 0 20px 0 96px;
+}
+
+.u-header .u-text-2 {
+  margin: -7px auto 0 96px;
+}
+
+.u-header .u-text-3 {
+  font-size: 0.875rem;
+  margin: -6px auto 0 96px;
 }
 @media (max-width: 1199px) {
   .u-header .u-image-1 {
     width: auto;
-    margin-top: 10px;
     margin-left: -39px;
   }
 
@@ -36126,25 +36165,68 @@ a.u-link.u-text-hover-grey-90:hover {
     width: 40px;
     height: 40px;
     margin-top: -41px;
-    margin-right: -40px;
+    margin-right: -63px;
+  }
+
+  .u-header .u-menu-1 {
+    margin-top: -36px;
+    margin-right: -12px;
+  }
+
+  .u-header .u-group-1 {
+    width: 333px;
+    height: auto;
+  }
+
+  .u-header .u-container-layout-1 {
+    padding-bottom: 8px;
+  }
+
+  .u-header .u-text-1 {
+    margin-right: 20px;
+    margin-left: 96px;
+  }
+
+  .u-header .u-text-2 {
+    margin-top: -7px;
+    margin-left: 96px;
+  }
+
+  .u-header .u-text-3 {
+    margin-left: 96px;
   }
 }
 @media (max-width: 991px) {
   .u-header .u-image-1 {
     margin-left: -39px;
-    width: auto;
-  }
-
-  .u-header .u-icon-1 {
-    margin-top: -41px;
   }
 }
 @media (max-width: 767px) {
-  .u-header .u-image-1 {
+  .u-header .u-sheet-1 {
+    min-height: 64px;
+  }
+
+  .u-header .u-icon-1 {
+    margin-right: -40px;
+  }
+
+  .u-header .u-menu-1 {
     width: auto;
+    margin-right: 0;
+  }
+
+  .u-header .u-group-1 {
+    margin-right: 80px;
+    margin-bottom: 4px;
+    margin-left: auto;
   }
 }
-
+@media (max-width: 575px) {
+  .u-header .u-group-1 {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+}
 .u-footer {
   background-image: none;
 }

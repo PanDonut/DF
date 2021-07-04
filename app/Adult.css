@@ -1,6 +1,6 @@
 .u-section-1 {
   background-image: none;
-  min-height: 1507px;
+  min-height: 852px;
 }
 
 .u-section-1 .u-shape-1 {
@@ -21,7 +21,7 @@
   min-height: 814px;
   height: auto;
   width: calc(((100% - 1140px) / 2) + 183px);
-  margin: 37px auto 0 0;
+  margin: 1px auto 0 0;
 }
 
 .u-section-1 .u-tab-link-1 {
@@ -99,7 +99,7 @@
 .u-section-1 .u-image-1 {
   width: 46px;
   height: 46px;
-  margin: -851px 0 60px auto;
+  margin: -851px 0 769px auto;
 }
 
 @media (max-width: 1199px) {

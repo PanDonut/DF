@@ -36179,7 +36179,11 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 }
 
-
+@media (max-width: 575px) {
+  .u-header .u-image-1 {
+    width: auto;
+  }
+}
 .u-footer {
   background-image: none;
 }

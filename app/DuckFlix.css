@@ -3,26 +3,10 @@
   min-height: 1752px;
 }
 
-.u-section-1 .u-tabs-1 {
-  min-height: 848px;
-  margin-top: -41px;
-  margin-bottom: 60px;
-  height: auto;
-}
-
-.u-section-1 .u-tab-link-1 {
-  font-weight: 400;
-  padding: 5px 15px;
-}
-
-.u-section-1 .u-container-layout-1 {
-  padding: 0;
-}
-
 .u-section-1 .u-gallery-1 {
   height: 157px;
-  width: 1203px;
-  margin: 21px auto 0;
+  width: 1202px;
+  margin: 20px auto 0;
 }
 
 .u-section-1 .u-gallery-inner-1 {
@@ -50,7 +34,19 @@
   padding: 13px;
 }
 
+.u-section-1 .u-custom-html-1 {
+  margin-bottom: 60px;
+  margin-top: 633px;
+  margin-left: calc(((100% - 1140px) / 2) + 1061px);
+  min-height: 88px;
+  width: 157px;
+}
+
 @media (max-width: 1199px) {
+  .u-section-1 {
+    min-height: 1718px;
+  }
+
   .u-section-1 .u-gallery-1 {
     height: 123px;
     width: 940px;
@@ -59,9 +55,17 @@
   .u-section-1 .u-gallery-inner-1 {
     grid-template-columns: repeat(4, auto);
   }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-left: calc(((100% - 940px) / 2) + 783px);
+  }
 }
 
 @media (max-width: 991px) {
+  .u-section-1 {
+    min-height: 1972px;
+  }
+
   .u-section-1 .u-gallery-1 {
     height: 377px;
     width: 720px;
@@ -70,9 +74,17 @@
   .u-section-1 .u-gallery-inner-1 {
     grid-template-columns: repeat(2, auto);
   }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-left: calc(((100% - 720px) / 2) + 563px);
+  }
 }
 
 @media (max-width: 767px) {
+  .u-section-1 {
+    min-height: 2726px;
+  }
+
   .u-section-1 .u-gallery-1 {
     height: 1131px;
     width: 540px;
@@ -81,12 +93,24 @@
   .u-section-1 .u-gallery-inner-1 {
     grid-template-columns: repeat(1, auto);
   }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-left: calc(((100% - 540px) / 2) + 383px);
+  }
 }
 
 @media (max-width: 575px) {
+  .u-section-1 {
+    min-height: 2307px;
+  }
+
   .u-section-1 .u-gallery-1 {
     height: 712px;
     width: 340px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-left: calc(((100% - 340px) / 2) + 183px);
   }
 }.gf :hover{
     position: fixed;
@@ -127,7 +151,12 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
-} @font-face {
+}
+.btn btn-transt { 
+    background-image: url(http://tinypic.com/images/goodbye.jpg) 3px 5px no-repeat;
+    padding-left: 35px;
+    padding-right: 15px;
+}@font-face {
   font-family: 'calibri-bold';
   font-style: normal;
   font-weight: 400;

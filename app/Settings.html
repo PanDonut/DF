@@ -89,6 +89,10 @@
               <button style="background-color: #0c0c0c;color:white" class="btn btn-old" onclick="swapStyle('old.css')" onmouseover="oldpop()" onmouseout="oldpopclose()">Stary Duckflix</button>
               <span class="popuptext" id="old">Autor Duckflix</span>
             </div>
+            <div id="box" class="popup">
+              <button style="background-color: green;color:white" class="btn btn-old" onclick="swapStyle('forest.css')" onmouseover="forestpop()" onmouseout="forestpopclose()">Las</button>
+              <span class="popuptext" id="forest">Autor Duckflix</span>
+            </div>
             <script type="text/javascript"> // When the user clicks on div, open the popup
 function oldpop() {
   var popup = document.getElementById("old");
@@ -106,6 +110,15 @@ function dcpop() {
 }
 function dcpopclose() {
   var popup = document.getElementById("dc");
+  popup.classList.toggle("show",false);
+}
+	
+function forestpop() {
+  var popup = document.getElementById("forest");
+  popup.classList.toggle("show");
+}
+function forestpopclose() {
+  var popup = document.getElementById("forest");
   popup.classList.toggle("show",false);
 } </script>
             <style> /* Popup container - can be anything you want */

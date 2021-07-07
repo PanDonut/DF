@@ -6,13 +6,13 @@ function check(form) {
 		location.replace('#adminhome')/* The Administrator homepage */
 	}
 	else if(form.userid.value == username[2] && form.pswrd.value == password[2]) {
-		location.replace('https://duckfilms.cloudns.ph/load/')/* The members homepage */
+		location.replace('https://app.duckfilms.cloudns.ph/load/')/* The members homepage */
 	}
 	else if (form.userid.value == username[3] && form.pswrd.value == password[3]) {
-		location.replace('https://duckfilms.cloudns.ph/load/')/* The members homepage */
+		location.replace('https://app.duckfilms.cloudns.ph/load/')/* The members homepage */
 	}
 	else if (form.userid.value == username[4] && form.pswrd.value == password[4]) {
-		location.replace('https://duckfilms.cloudns.ph/load/')/* The members homepage */
+		location.replace('https://app.duckfilms.cloudns.ph/load/')/* The members homepage */
 	}
 	else if(form.userid.value == username[0]||form.userid.value == username[1]||form.userid.value == username[2]) {
 		alert("Incorrect Password")

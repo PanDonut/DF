@@ -640,8 +640,8 @@
   }
 
   .u-section-1 .u-text-2 {
-    margin-right: calc(((100% - 540px) / 2) + 452px);
-    margin-left: calc(((100% - 540px) / 2) + 36px);
+    margin-right: calc(((100% - 540px) / 2) + 436px);
+    margin-left: calc(((100% - 540px) / 2) + 39px);
   }
 
   .u-section-1 .u-group-12 {
@@ -649,8 +649,9 @@
   }
 
   .u-section-1 .u-text-4 {
-    margin-right: calc(((100% - 540px) / 2) + 369px);
-    margin-left: calc(((100% - 540px) / 2) + 88px);
+    margin-right: calc(((100% - 540px) / 2) + 331px);
+    margin-bottom: 60px;
+    margin-left: calc(((100% - 540px) / 2) + 104px);
   }
 
   .u-section-1 .u-btn-1 {
@@ -729,7 +730,7 @@
 
   .u-section-1 .u-text-2 {
     margin-top: 0;
-    margin-right: calc(((100% - 340px) / 2) + 288px);
+    margin-right: calc(((100% - 340px) / 2) + 275px);
     margin-left: calc(((100% - 340px) / 2));
   }
 

@@ -36181,12 +36181,14 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 @media (max-width: 767px) {
   .u-header .u-image-1 {
-    width: 157px;
+    width: auto;
+    height: auto;
   }
 }
 @media (max-width: 575px) {
   .u-header .u-image-1 {
     width: auto;
+    height: 37px;
   }
 }
 .u-footer {

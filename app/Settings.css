@@ -42,7 +42,6 @@
   width: 1057px;
   min-height: 864px;
   animation-duration: 1000ms;
-  height: auto;
   margin: -3px calc(((100% - 1140px) / 2) + -32px) 0 auto;
 }
 
@@ -66,8 +65,7 @@
 }
 
 .u-section-1 .u-custom-html-2 {
-  min-height: 89px;
-  height: auto;
+  min-height: 99px;
   margin: 15px 331px 0 61px;
 }
 
@@ -99,7 +97,6 @@
     width: 940px;
     margin-top: -46px;
     margin-right: calc(((100% - 940px) / 2) + -159px);
-    height: auto;
   }
 
   .u-section-1 .u-text-1 {
@@ -120,6 +117,7 @@
   .u-section-1 .u-custom-html-2 {
     margin-right: 272px;
     margin-left: 3px;
+    height: auto;
   }
 
   .u-section-1 .u-custom-html-3 {

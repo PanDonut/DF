@@ -1,132 +1,18 @@
-<!DOCTYPE html>
-<html style="font-size: 16px;" lang="pl-PL">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="Duck, DuckFlix, Flix">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Duckfilms</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Duckfilms.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    
-    <link rel="icon" href="images/favicon.png">
-    
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "DuckFlix",
-		"logo": "images/Duckflix2.png"
-}</script>
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Duckfilms">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="website">
-  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-	<link id="mystylesheet" rel="stylesheet" type="text/css" href="light.css"></head>
-  <body class="u-body u-stick-footer"><header class="h u-black u-clearfix u-header u-sticky u-header" id="sec-1617"><div class="u-clearfix u-sheet u-sheet-1">
-        <a href="Duckfilms.html" data-page-id="34563113" class="duckf u-image u-image-default u-logo u-image-1" data-image-width="658" data-image-height="154" title="DuckFlix" data-animation-name="pulse" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
-          <img src="images/Duckflix2.png" class="u-logo-image u-logo-image-1" data-image-width="156.923" alt="DuckFlix">
-        </a><span class="u-icon u-icon-circle u-text-white u-icon-1" data-animation-name="pulse" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="" data-href="https://sites.google.com/search/dfsearch?query=&amp;scope=site&amp;showTabs=false"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 56.966 56.966" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bd7e"></use></svg><svg class="u-svg-content" viewBox="0 0 56.966 56.966" x="0px" y="0px" id="svg-bd7e" style="enable-background:new 0 0 56.966 56.966;"><path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
-	s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
-	c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
-	s-17-7.626-17-17S14.61,6,23.984,6z"></path></svg></span>
-        <img class="u-image u-image-default u-preserve-proportions u-image-2" src="images/settings.png" alt="" data-image-width="512" data-image-height="512">
-        <a href="Settings.html" data-page-id="109984864" class="u-border-none u-btn u-button-style u-custom-color-5 u-hover-custom-color-12 u-text-custom-color-5 u-btn-1">a<br>
-          <br>
-        </a>
-      </div></header>
-    <section class="b u-clearfix u-grey-90 u-section-1" id="sec-ff23">
-      <div class="u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-on-hover u-gallery-1">
-        <div class="u-gallery-inner u-gallery-inner-1">
-          <div class="u-effect-fade u-effect-hover-liftUp u-gallery-item" data-href="Duckfilms-Wodogrzmoty-Małe.html" data-page-id="927425909">
-            <div class="u-back-slide" data-image-width="1600" data-image-height="900">
-              <img class="u-back-image u-expanded" src="images/675452.jpg" alt="Wodogrzmoty Małe">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-1">
-              <h3 class="u-gallery-heading u-text-white" style="font-size: 1.5rem;">Wodogrzmoty Małe</h3>
-              <p class="u-gallery-text u-text-white" style="font-size: 1rem;">Plany rodzeństwa Dippera i Mabel Pines zostają zrujnowane, gdy rodzice wysyłają ich do domku wujka Stana w Wodogrzmotach Małych...</p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-effect-hover-liftUp u-gallery-item" data-href="Duckfilms-Asdf.html" data-page-id="927425910">
-            <div class="u-back-slide" data-image-width="1280" data-image-height="720">
-              <img class="u-back-image u-expanded" src="images/wp7031169-asdfmovie-wallpapers.jpg" alt="ASDF Movie">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-2">
-              <h3 class="u-gallery-heading u-text-white" style="font-size: 1.5rem;">ASDF Movie</h3>
-              <p class="u-gallery-text u-text-white" style="font-size: 1rem;">Seria krótkich filmów komediowych Toma Ridgewella</p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-effect-hover-liftUp u-gallery-item" data-href="Duckfilms-Harry-Potter-i-Kamień-Filozoficzny.html" data-page-id="927425921">
-            <div class="u-back-slide" data-image-width="1920" data-image-height="1080">
-              <img class="u-back-image u-expanded" src="images/wp4879828-harry-potter-and-the-philosophers-stone-wallpapers.jpg" alt="Harry Potter i Kamień Filozoficzny">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-3">
-              <h3 class="u-gallery-heading u-text-white" style="font-size: 1.5rem;">Harry Potter i Kamień Filozoficzny</h3>
-              <p class="u-gallery-text u-text-white" style="font-size: 1rem;">Jest to pierwszy film z serii o przygodach Harry'ego Pottera. Opowiada o chłopcu Harrym Potterze, który w swoje...</p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-effect-hover-liftUp u-gallery-item">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded" src="images/default-image.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-4">
-              <h3 class="u-gallery-heading u-text-white" style="font-size: 1.5rem;"></h3>
-              <p class="u-gallery-text u-text-white" style="font-size: 1rem;"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="u-clearfix u-custom-html u-custom-html-1">
-        <script type="text/javascript"> var setTheme = localStorage.getItem('theme')
-		console.log('theme:', setTheme)
-		if (setTheme == null){
-			swapStyle('light.css')
-		}else{
-			swapStyle(setTheme)
-		}
-		function swapStyle(sheet){
-			document.getElementById('mystylesheet').href = sheet
-			localStorage.setItem('theme', sheet)
-		}
-		/*
-		var setTheme = localStorage.getItem('theme')
-		if (setTheme == null){
-			swapStyles('light.css')
-		}else{
-			swapStyles(setTheme)
-		}
-			
-		
-		function swapStyles(sheet){
-			document.getElementById('mystylesheet').href = sheet
-			localStorage.setItem('theme', sheet)
-		}
-		*/ </script>
-      </div>
-      <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-2">
-        <script> var http = require('http');
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World!');
-}).listen(8080); 
-	
 const chalk = require('chalk');
 const { Client } = require('discord-rpc');
 let client = new Client({
     transport: 'ipc'
 });
+
 const config = require('./config.json');
+
 const SUCCESS = chalk.hex('#43B581');
 const ERROR = chalk.hex('#F04747');
 const INFO = chalk.hex('#FF73FA');
 const LOG = chalk.hex('#44DDBF');
+
 /* Adds [LOG] and [dd/mm/yyyy | hh:mm:ss UTC] prefix to all console.log's */
+
 let originalConsoleLog = console.log;
 console.log = function () {
     args = [];
@@ -143,7 +29,9 @@ console.log = function () {
     }
     originalConsoleLog.apply(console, args);
 }
+
 /* Adds [ERROR] and [dd/mm/yyyy | hh:mm:ss UTC] prefix to all console.error's */
+
 let originalConsoleError = console.error;
 console.error = function () {
     args = [];
@@ -160,22 +48,31 @@ console.error = function () {
     }
     originalConsoleError.apply(console, args);
 }
+
 let retryDuration = 1; // Retry in 15 seconds by default
+
 console.log(LOG(`Attempting to connect to Discord, please wait ${retryDuration} seconds...`));
+
 connectToDiscord();
+
 let protocol = new RegExp('^(http|https)://');
 let startTimestamp = new Date();
 let rpc = config.rich_presence;
+
 let initialTasks = [validateConfig, updatePresence],
     i = 0;
+
 /* Consecutively execute initialTasks before updating the user's profile (onStartup only) */
+
 function onStartup() {
     initialTasks[i++]();
     if (i < initialTasks.length) {
         setTimeout(onStartup, 5 * 1000); // 5 seconds
     }
 }
+
 /* Ensure the user's config meets all the requirements */
+
 function validateConfig() {
     console.log(INFO(`Validating configuration...`));
     if (rpc.details && rpc.details.length > 128) {
@@ -212,7 +109,9 @@ function validateConfig() {
     }
     console.log(SUCCESS(`Configuration is valid! Attempting to update ${client.user.username}#${client.user.discriminator}'s Rich Presence...`));
 }
+
 /* Update user's Rich Presence */
+
 function updatePresence() {
     console.log(INFO(`Successfully updated ${client.user.username}#${client.user.discriminator}'s Rich Presence!`));
     return client.request('SET_ACTIVITY', {
@@ -243,7 +142,9 @@ function updatePresence() {
         }
     });
 }
+
 /* Login using the user's Discord Developer Application ID */
+
 function connectToDiscord() {
     /* If a previous attempt was made, destroy the client before retrying */
     if (client) {
@@ -262,18 +163,13 @@ function connectToDiscord() {
         client.login({ clientId: config.clientId });
     }, retryDuration * 1000)
 }
+
 /* Handle 'Could not connect' error, proceed to retry if attempt fails */
+
 process.on('unhandledRejection', err => {
     if (err.message === 'Could not connect') {
         console.log(ERROR(`Unable to connect to Discord. Is Discord running and logged-in in the background?`));
         console.log(LOG(`Automatically retrying to connect, please wait ${retryDuration} seconds...`));
         connectToDiscord();
     }
-}); </script>
-      </div>
-    </section>
-    
-    
-    
-  </body>
-</html>
+});

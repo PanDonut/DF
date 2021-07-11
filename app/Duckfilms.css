@@ -41,7 +41,6 @@
 }
 
 .u-section-1 .u-custom-html-2 {
-  height: auto;
   min-height: 32px;
   margin-top: 30px;
   margin-bottom: 60px;
@@ -66,6 +65,10 @@
   .u-section-1 .u-custom-html-1 {
     margin-right: calc(((100% - 1140px) / 2) + 100px);
     margin-left: calc(((100% - 1140px) / 2) + 883px);
+  }
+
+  .u-section-1 .u-custom-html-2 {
+    height: auto;
   }
 }
 

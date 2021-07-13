@@ -36169,8 +36169,6 @@ a.u-link.u-text-hover-grey-90:hover {
 @media (max-width: 991px) {
   .u-header .u-image-1 {
     margin-left: -33px;
-    width: auto;
-    height: auto;
   }
 
   .u-header .u-image-2 {
@@ -36184,7 +36182,6 @@ a.u-link.u-text-hover-grey-90:hover {
 @media (max-width: 767px) {
   .u-header .u-image-1 {
     width: 157px;
-    height: 37px;
   }
 }
 @media (max-width: 575px) {
@@ -36220,9 +36217,6 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 }
 
- /*begin-variables custom-site-css*/html {
-scroll-behavior: smooth;
-}/*end-variables custom-site-css*/
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
  /*end-variables base-font-size*/

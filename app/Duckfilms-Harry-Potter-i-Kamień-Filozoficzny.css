@@ -67,15 +67,17 @@
   font-size: 0.875rem;
   letter-spacing: 1px;
   background-image: none;
-  margin: 12px auto 60px calc(((100% - 1140px) / 2) + -38px);
+  margin: 12px auto 0 calc(((100% - 1140px) / 2) + -38px);
   padding: 9px 21px 11px 20px;
 }
 
-@media (max-width: 1199px) {
-  .u-section-1 {
-    min-height: 1209px;
-  }
+.u-section-1 .u-custom-html-1 {
+  min-height: 20px;
+  height: auto;
+  margin: -274px 0 60px;
+}
 
+@media (max-width: 1199px) {
   .u-section-1 .u-group-1 {
     margin-left: calc(((100% - 940px) / 2) + -38px);
   }
@@ -130,13 +132,14 @@
     margin-top: 20px;
     margin-left: calc(((100% - 940px) / 2) + -26px);
   }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: initial;
+    margin-left: initial;
+  }
 }
 
 @media (max-width: 991px) {
-  .u-section-1 {
-    min-height: 1489px;
-  }
-
   .u-section-1 .u-group-1 {
     width: 720px;
     margin-left: calc(((100% - 720px) / 2));
@@ -179,10 +182,6 @@
 }
 
 @media (max-width: 767px) {
-  .u-section-1 {
-    min-height: 1557px;
-  }
-
   .u-section-1 .u-group-1 {
     width: 540px;
     margin-left: calc(((100% - 540px) / 2));
@@ -264,8 +263,13 @@
 
   .u-section-1 .u-btn-1 {
     margin-top: 0;
-    margin-bottom: 0;
     margin-left: calc(((100% - 340px) / 2));
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-bottom: 0;
+    margin-right: initial;
+    margin-left: initial;
   }
 }.u-section-2 {
   background-image: url("images/blurred-gradient-abstract-background-with-vivid-primary-colors.jpg");

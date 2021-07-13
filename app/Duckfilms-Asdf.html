@@ -126,6 +126,121 @@
       </div>
       <p class="u-custom-font u-text u-text-white u-text-4">Miniserial</p>
       <a href="https://data.pandasuite.com/videos/607559c147970e2d9e000440-universal_1920_1080_20_main_3-0.mp4" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-9 u-hidden-sm u-hidden-xs u-hover-custom-color-8 u-radius-50 u-btn-1">oglądaj</a>
+      <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1">
+        <div id="overlay">
+          <div class="squares"></div>
+        </div>
+        <script> var overlay = document.getElementById("overlay");
+window.addEventListener('load', function(){
+  overlay.style.display = 'none';
+}) </script>
+        <style> body {
+	background: #2c2f33;
+}
+		
+.bcc {
+	background-color: black;
+}
+.squares {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 50px;
+	height: 50px;
+	animation: scale ease 3.4s infinite;
+}
+.squares::before {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: #fe0303;
+	top: -10px;
+	left: -10px;
+	animation: top ease 5s infinite;
+}
+.squares::after {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: #fe0303;
+	bottom: -10px;
+	right: -10px;
+	animation: bottom ease 3s infinite;
+}
+@keyframes top{
+	0%{
+		top: -10px;
+	}
+	20%{
+		top: 100%;
+		left: -10px;
+	}
+	40%{
+		left: 100%;
+		top: 100%;
+		transform: rotate(180deg);
+	}
+	60%{
+		top: -10px;
+		left: 100%;
+	}
+	80%{
+		top: -10px;
+		transform: rotate(360deg);
+	}
+	100%{
+		left: -10px;
+	}
+}
+@keyframes bottom{
+	0%{
+		bottom: -10px;
+	}
+	20%{
+		bottom: 100%;
+		right: -10px;
+	}
+	40%{
+		right: 100%;
+		bottom: 100%;
+		transform: rotate(180deg);
+	}
+	60%{
+		bottom: -10px;
+		right: 100%;
+	}
+	80%{
+		bottom: -10px;
+		transform: rotate(360deg);
+	}
+	100%{
+		right: -10px;
+	}
+}
+@keyframes scale{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(0.7);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+#overlay{
+  height:100%;
+  width:100%;
+  position:fixed;
+  left:0;
+  top:0;
+ } </style>
+      </div>
     </section>
     <section class="u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-image u-section-2" id="sec-83d4" data-image-width="8200" data-image-height="5474">
       <div class="u-clearfix u-sheet u-sheet-1">

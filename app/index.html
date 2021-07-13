@@ -19,18 +19,16 @@
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
-		"name": "DuckFlix",
+		"name": "Duckfilms",
 		"logo": "images/Duckflix2.png"
 }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Duckfilms">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
-  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-	<link id="mystylesheet" rel="stylesheet" type="text/css" href="light.css"></head>
+  <script src="jquery-2.1.4.js"></script></head>
   <body data-home-page="Duckfilms.html" data-home-page-title="Duckfilms" class="u-body u-stick-footer"><header class="h u-black u-clearfix u-header u-sticky u-header" id="sec-1617"><div class="u-clearfix u-sheet u-sheet-1">
-        <a href="Duckfilms.html" data-page-id="34563113" class="duckf u-image u-image-default u-logo u-image-1" data-image-width="658" data-image-height="154" title="DuckFlix" data-animation-name="pulse" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
+        <a href="Duckfilms.html" data-page-id="34563113" class="duckf u-image u-image-default u-logo u-image-1" data-image-width="658" data-image-height="154" title="Duckfilms" data-animation-name="pulse" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
           <img src="images/Duckflix2.png" class="u-logo-image u-logo-image-1" data-image-width="156.923" alt="DuckFlix">
         </a><span class="u-icon u-icon-circle u-text-white u-icon-1" data-animation-name="pulse" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="" data-href="https://sites.google.com/search/dfsearch?query=&amp;scope=site&amp;showTabs=false"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 56.966 56.966" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bd7e"></use></svg><svg class="u-svg-content" viewBox="0 0 56.966 56.966" x="0px" y="0px" id="svg-bd7e" style="enable-background:new 0 0 56.966 56.966;"><path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
 	s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
@@ -82,7 +80,109 @@
           </div>
         </div>
       </div>
-      <div class="u-clearfix u-custom-html u-custom-html-1">
+      <div class="loader u-clearfix u-custom-html u-expanded-width u-custom-html-1">
+        <div class="squares" id="overlay"></div>
+        <script> var overlay = document.getElementById("overlay");
+window.addEventListener('load', function(){
+  overlay.style.display = 'none';
+}) </script>
+        <style> body {
+	background: #2c2f33;
+}
+.squares {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 50px;
+	height: 50px;
+	animation: scale ease 1.4s infinite;
+}
+.squares::before {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: #7289da;
+	top: -10px;
+	left: -10px;
+	animation: top ease 3s infinite;
+}
+.squares::after {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: #7289da;
+	bottom: -10px;
+	right: -10px;
+	animation: bottom ease 3s infinite;
+}
+@keyframes top{
+	0%{
+		top: -10px;
+	}
+	20%{
+		top: 100%;
+		left: -10px;
+	}
+	40%{
+		left: 100%;
+		top: 100%;
+		transform: rotate(180deg);
+	}
+	60%{
+		top: -10px;
+		left: 100%;
+	}
+	80%{
+		top: -10px;
+		transform: rotate(360deg);
+	}
+	100%{
+		left: -10px;
+	}
+}
+@keyframes bottom{
+	0%{
+		bottom: -10px;
+	}
+	20%{
+		bottom: 100%;
+		right: -10px;
+	}
+	40%{
+		right: 100%;
+		bottom: 100%;
+		transform: rotate(180deg);
+	}
+	60%{
+		bottom: -10px;
+		right: 100%;
+	}
+	80%{
+		bottom: -10px;
+		transform: rotate(360deg);
+	}
+	100%{
+		right: -10px;
+	}
+}
+@keyframes scale{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(0.7);
+	}
+	100%{
+		transform: scale(1);
+	}
+} </style>
+      </div>
+      <div class="u-clearfix u-custom-html u-custom-html-2">
         <script type="text/javascript"> var setTheme = localStorage.getItem('theme')
 		console.log('theme:', setTheme)
 		if (setTheme == null){
@@ -109,7 +209,7 @@
 		}
 		*/ </script>
       </div>
-      <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-2">
+      <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-3">
         <script> var http = require('http');
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/plain'});

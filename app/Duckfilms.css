@@ -47,7 +47,6 @@
 
 .u-section-1 .u-custom-html-3 {
   min-height: 20px;
-  height: auto;
   margin-top: -960px;
   margin-bottom: 60px;
 }
@@ -77,6 +76,10 @@
     height: auto;
     margin-right: initial;
     margin-left: initial;
+  }
+
+  .u-section-1 .u-custom-html-3 {
+    height: auto;
   }
 }
 

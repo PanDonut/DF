@@ -1,22 +1,25 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
 
-body {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: 'Roboto', sans-serif;
-  margin-top: 100px;
+.module {
+    width: 1920px;
+    height: 1080px;
+    border-radius: 500px;
+    background-image: url(https://raw.githubusercontent.com/PanDonut/pandonut.github.io/main/points.png);
+    background-size: 700px 700px;
+    margin-left: -120px;
+    margin-top: -120px;
+    z-index: 1;
 }
 
 .login-card {
   padding: 40px;
   width: 274px;
-  background-color: #F7F7F7;
+  background-color: #1d2024;
   margin: 0 auto 10px;
   border-radius: 2px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   overflow: hidden;
+  color: white;
 }
 
 .login-card h1 {
@@ -24,6 +27,7 @@ body {
   font-weight: 100;
   text-align: center;
   font-size: 2.3em;
+  color: white;
 }
 
 .login-card p {
@@ -46,12 +50,13 @@ body {
   width: 100%;
   margin-bottom: 10px;
   -webkit-appearance: none;
-  background: #fff;
-  border: 1px solid #d9d9d9;
-  border-top: 1px solid #c0c0c0;
+  background: #272b30;
+  border: 1px solid #272b30;
+  border-top: 1px solid #272b30;
   padding: 0 8px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
+  color: #919191;
 }
 
 .login-card input[type=text]:hover, input[type=password]:hover {
@@ -76,13 +81,13 @@ body {
   border: 0px;
   color: #fff;
   text-shadow: 0 1px rgba(0,0,0,0.1); 
-  background-color: #4d90fe;
+  background-color: #a60000;
 }
 
 .login-submit:hover {
   border: 0px;
   text-shadow: 0 1px rgba(0,0,0,0.3);
-  background-color: #357ae8;
+  background-color: #bf0000;
 }
 
 .login-card a {

@@ -30,7 +30,6 @@
 
 .u-section-1 .u-tabs-1 {
   min-height: 814px;
-  height: auto;
   margin: 0 auto 0 0;
 }
 
@@ -46,7 +45,6 @@
   width: 1057px;
   min-height: 976px;
   animation-duration: 1000ms;
-  height: auto;
   margin: 15px auto -237px 82px;
 }
 
@@ -96,6 +94,7 @@
   }
 
   .u-section-1 .u-tabs-1 {
+    height: auto;
     margin-right: initial;
     margin-left: initial;
   }
@@ -103,7 +102,6 @@
   .u-section-1 .u-group-1 {
     width: 940px;
     margin-left: auto;
-    height: auto;
   }
 
   .u-section-1 .u-text-1 {

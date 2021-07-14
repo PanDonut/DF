@@ -140,6 +140,58 @@
     margin-right: calc(((100% - 1140px) / 2) + 400px);
     margin-left: calc(((100% - 1140px) / 2) + 583px);
   }
+}.u-section-2 {
+  background-image: url("images/blurred-gradient-abstract-background-with-vivid-primary-colors.jpg");
+  background-position: 50% 50%;
+}
+
+.u-section-2 .u-sheet-1 {
+  min-height: 860px;
+}
+
+.u-section-2 .u-image-1 {
+  width: 570px;
+  height: 1014px;
+  margin: -507px auto;
+}
+
+.u-section-2 .u-custom-html-1 {
+  min-height: 660px;
+  animation-duration: 1000ms;
+  height: auto;
+  width: 440px;
+  margin: -402px -50px 60px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-2 .u-custom-html-1 {
+    margin-right: initial;
+    margin-left: initial;
+    width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-2 .u-image-1 {
+    width: 540px;
+    height: 960px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-2 .u-image-1 {
+    height: 292px;
+    width: 170px;
+    margin-top: 110px;
+    margin-right: 53px;
+    margin-bottom: 0;
+  }
+
+  .u-section-2 .u-custom-html-1 {
+    width: 440px;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
 }.gf :hover{
     position: fixed;
     right: 0;

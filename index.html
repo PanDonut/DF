@@ -28,7 +28,7 @@
   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 	<link id="mystylesheet" rel="stylesheet" type="text/css" href="light.css"></head>
-  <body data-home-page="Logowanie.html" data-home-page-title="Logowanie" class="u-body u-gradient" style="background-image: linear-gradient(to right, #3e3e47, #292e33);">
+  <body data-home-page="Logowanie.html" data-home-page-title="Logowanie" class="b" style="background-image: linear-gradient(to right, #3e3e47, #292e33);">
   	<section class="n">
   		<div class="login-card">
   			<style>
@@ -36,7 +36,7 @@
 					overflow: hidden;
 					position: fixed;
 					margin: auto;
-					padding-top: 250px;
+					padding-top: 150px;
 					padding-left: 100px;
 					z-index: 10000;
 				  }
@@ -51,7 +51,7 @@
   			<p><a href="forgot-password.html">Zapomniałeś hasła?</a></p>
   		</div>
   	</section>
-  	<section class="move u-clearfix u-section-1" id="sec-ca24">
+  	<section class="b u-clearfix u-section-1" id="sec-ca24">
   		<div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
   			<div class="module" id="module"></div>
   			<style>
@@ -213,5 +213,30 @@
   			</style>
   		</div>
   	</section>
+        <script type="text/javascript"> var setTheme = localStorage.getItem('theme')
+		console.log('theme:', setTheme)
+		if (setTheme == null){
+			swapStyle('light.css')
+		}else{
+			swapStyle(setTheme)
+		}
+		function swapStyle(sheet){
+			document.getElementById('mystylesheet').href = sheet
+			localStorage.setItem('theme', sheet)
+		}
+		/*
+		var setTheme = localStorage.getItem('theme')
+		if (setTheme == null){
+			swapStyles('light.css')
+		}else{
+			swapStyles(setTheme)
+		}
+			
+		
+		function swapStyles(sheet){
+			document.getElementById('mystylesheet').href = sheet
+			localStorage.setItem('theme', sheet)
+		}
+		*/ </script>
   </body>
 </html>

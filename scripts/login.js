@@ -5,16 +5,16 @@ function check(form) {
 		location.replace('#adminhome')/* The Administrator homepage */
 	}
 	else if(form.userid.value == username[2] && form.pswrd.value == password[2]) {
-		location.replace('https://app.duckfilms.cloudns.ph/app/')/* The members homepage */
+		location.replace('https://app.duckfilms.cloudns.ph/user/Mistfall.html')/* The members homepage */
 	}
 	else if (form.userid.value == username[3] && form.pswrd.value == password[3]) {
-		location.replace('https://app.duckfilms.cloudns.ph/app/')/* The members homepage */
+		location.replace('https://app.duckfilms.cloudns.ph/user/Jendros.html')/* The members homepage */
 	}
 	else if (form.userid.value == username[4] && form.pswrd.value == password[4]) {
-		location.replace('https://app.duckfilms.cloudns.ph/app/')/* The members homepage */
+		location.replace('https://app.duckfilms.cloudns.ph/user/PanDonut.html')/* The members homepage */
 	}
 	else if (form.userid.value == username[5] && form.pswrd.value == password[5]) {
-		location.replace('https://app.duckfilms.cloudns.ph/app/')/* The members homepage */
+		location.replace('https://app.duckfilms.cloudns.ph/user/Hubert.html')/* The members homepage */
 	}
 	else if(form.userid.value == username[0]||form.userid.value == username[1]||form.userid.value == username[2]) {
 		alert("Incorrect Password")

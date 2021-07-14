@@ -1,0 +1,259 @@
+.u-section-1 {
+  min-height: 780px;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 100vh;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 17px 440px 0 -51px;
+}
+
+.u-section-1 .u-text-2 {
+  margin: 17px 1111px 0 -51px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 107px;
+  height: 25px;
+  animation-duration: 1000ms;
+  margin: -25px auto 0 17px;
+}
+
+.u-section-1 .u-text-3 {
+  margin: 40px 440px 0 -51px;
+}
+
+.u-section-1 .u-text-4 {
+  font-size: 1.5rem;
+  margin: 20px 440px 0 -51px;
+}
+
+.u-section-1 .u-text-5 {
+  margin: 17px 440px 0 -51px;
+}
+
+.u-section-1 .u-accordion-1 {
+  width: 1140px;
+  margin: 17px auto 0 -51px;
+}
+
+.u-section-1 .u-accordion-link-1 {
+  margin-bottom: 0;
+}
+
+.u-section-1 .u-icon-1 {
+  height: 20px;
+  width: 20px;
+  background-image: none;
+}
+
+.u-section-1 .u-accordion-pane-1 {
+  min-height: 1762px;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 0 0 30px;
+}
+
+.u-section-1 .u-text-6 {
+  animation-duration: 1000ms;
+  margin: 20px 400px 0 20px;
+}
+
+.u-section-1 .u-icon-2 {
+  height: 20px;
+  width: 20px;
+  background-image: none;
+}
+
+.u-section-1 .u-accordion-pane-2 {
+  min-height: 1785px;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 0;
+}
+
+.u-section-1 .u-text-7 {
+  animation-duration: 1000ms;
+  margin: 20px 400px 0 20px;
+}
+
+.u-section-1 .u-custom-html-1 {
+  min-height: 74px;
+  height: auto;
+  width: 1242px;
+  margin: 30px -51px 60px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 780px;
+  }
+
+  .u-section-1 .u-text-1 {
+    width: auto;
+    margin-right: 323px;
+    margin-left: -34px;
+  }
+
+  .u-section-1 .u-text-2 {
+    width: auto;
+    margin-top: 16px;
+    margin-right: 894px;
+    margin-left: -34px;
+  }
+
+  .u-section-1 .u-image-1 {
+    margin-left: 34px;
+  }
+
+  .u-section-1 .u-text-3 {
+    width: auto;
+    margin-top: 17px;
+    margin-right: 323px;
+    margin-left: -34px;
+  }
+
+  .u-section-1 .u-text-4 {
+    width: auto;
+    margin-top: 16px;
+    margin-right: 223px;
+    margin-left: -34px;
+  }
+
+  .u-section-1 .u-text-5 {
+    width: auto;
+    margin-right: 223px;
+    margin-left: -34px;
+  }
+
+  .u-section-1 .u-accordion-1 {
+    width: 940px;
+    margin-right: 34px;
+    margin-left: -34px;
+  }
+
+  .u-section-1 .u-accordion-pane-1 {
+    height: auto;
+  }
+
+  .u-section-1 .u-text-6 {
+    margin-right: 220px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-accordion-pane-2 {
+    height: auto;
+  }
+
+  .u-section-1 .u-text-7 {
+    margin-right: 220px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: 34px;
+    margin-left: -34px;
+    width: 940px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-text-1 {
+    margin-right: 213px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 674px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 213px;
+  }
+
+  .u-section-1 .u-text-4 {
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-5 {
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-accordion-1 {
+    width: 720px;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-6 {
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-7 {
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: 0;
+    width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-text-1 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 460px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-image-1 {
+    margin-left: 65px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-text-4 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-text-5 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-accordion-1 {
+    width: 540px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-left: 0;
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-text-2 {
+    margin-right: 260px;
+  }
+
+  .u-section-1 .u-accordion-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    width: 340px;
+  }
+}.code {
+padding: 20px; 
+border-radius: 15px;
+background-color: #3b3b3b
+} 

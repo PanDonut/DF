@@ -1,5 +1,6 @@
 .u-section-1 {
   min-height: 795px;
+  overflow: hidden;
 }
 
 .u-section-1 .u-custom-html-1 {
@@ -7,34 +8,40 @@
   animation-duration: 1000ms;
   height: auto;
   margin: 0;
+  overflow: hidden;
 }
 
 .u-section-1 .u-custom-html-2 {
   min-height: 20px;
   height: auto;
   margin: 115px 0 0;
+  overflow: hidden;
 }
 
 @media (max-width: 1199px) {
   .u-section-1 {
-    min-height: 796px;
+  min-height: 796px;
+  overflow: hidden;
   }
 
   .u-section-1 .u-custom-html-1 {
     margin-right: initial;
     margin-left: initial;
+    overflow: hidden;
   }
 
   .u-section-1 .u-custom-html-2 {
     margin-bottom: 1px;
     margin-right: initial;
     margin-left: initial;
+    overflow: hidden;
   }
 }
 
 @media (max-width: 991px) {
   .u-section-1 {
     min-height: 967px;
+    overflow: hidden;
   }
 
   .u-section-1 .u-custom-html-2 {
@@ -42,6 +49,7 @@
     margin-bottom: 60px;
     margin-right: initial;
     margin-left: initial;
+    overflow: hidden;
   }
 }
 
@@ -50,18 +58,21 @@
     margin-top: -114px;
     margin-right: initial;
     margin-left: initial;
+    overflow: hidden;
   }
 }
 
 @media (max-width: 575px) {
   .u-section-1 {
     min-height: 1783px;
+    overflow: hidden;
   }
 
   .u-section-1 .u-custom-html-1 {
     min-height: 1222px;
     margin-right: initial;
     margin-left: initial;
+    overflow: hidden;
   }
 
   .u-section-1 .u-custom-html-2 {
@@ -69,6 +80,7 @@
     margin-bottom: 0;
     margin-right: initial;
     margin-left: initial;
+    overflow: hidden;
   }
 }@font-face {
   font-family: 'calibri-bold';

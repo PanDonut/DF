@@ -26,7 +26,8 @@
 
 .u-section-1 .u-tabs-1 {
   min-height: 490px;
-  margin: -71px auto 0 0;
+  margin-top: -71px;
+  margin-bottom: 0;
 }
 
 .u-section-1 .u-tab-pane-1 {
@@ -315,17 +316,15 @@
   font-size: 0.875rem;
   letter-spacing: 1px;
   background-image: none;
-  margin: 9px auto 0 calc(((100% - 1140px) / 2) + -38px);
+  margin: 9px auto 60px calc(((100% - 1140px) / 2) + -38px);
   padding: 9px 21px 11px 20px;
 }
 
-.u-section-1 .u-custom-html-1 {
-  min-height: 20px;
-  height: auto;
-  margin: -271px 0 60px;
-}
-
 @media (max-width: 1199px) {
+  .u-section-1 {
+    min-height: 1209px;
+  }
+
   .u-section-1 .u-group-1 {
     margin-left: calc(((100% - 940px) / 2) + -38px);
   }
@@ -344,8 +343,6 @@
     min-height: 669px;
     height: auto;
     margin-top: -200px;
-    margin-right: initial;
-    margin-left: initial;
   }
 
   .u-section-1 .u-slider-1 {
@@ -524,14 +521,13 @@
     margin-top: 20px;
     margin-left: calc(((100% - 940px) / 2) + -26px);
   }
-
-  .u-section-1 .u-custom-html-1 {
-    margin-right: initial;
-    margin-left: initial;
-  }
 }
 
 @media (max-width: 991px) {
+  .u-section-1 {
+    min-height: 1489px;
+  }
+
   .u-section-1 .u-group-1 {
     width: 720px;
     margin-left: calc(((100% - 720px) / 2));
@@ -540,8 +536,6 @@
   .u-section-1 .u-tabs-1 {
     min-height: 1038px;
     margin-top: -228px;
-    margin-right: initial;
-    margin-left: initial;
   }
 
   .u-section-1 .u-slider-1 {
@@ -673,6 +667,10 @@
 }
 
 @media (max-width: 767px) {
+  .u-section-1 {
+    min-height: 1557px;
+  }
+
   .u-section-1 .u-group-1 {
     width: 540px;
     margin-left: calc(((100% - 540px) / 2));
@@ -685,8 +683,6 @@
 
   .u-section-1 .u-tabs-1 {
     min-height: 1106px;
-    margin-right: initial;
-    margin-left: initial;
   }
 
   .u-section-1 .u-slider-1 {
@@ -733,6 +729,7 @@
 
   .u-section-1 .u-text-14 {
     margin-right: calc(((100% - 540px) / 2) + 378px);
+    margin-bottom: 60px;
     margin-left: calc(((100% - 540px) / 2) + 88px);
   }
 
@@ -755,8 +752,6 @@
 
   .u-section-1 .u-tabs-1 {
     margin-top: 0;
-    margin-right: initial;
-    margin-left: initial;
   }
 
   .u-section-1 .u-image-3 {
@@ -836,13 +831,8 @@
 
   .u-section-1 .u-btn-1 {
     margin-top: 0;
-    margin-left: calc(((100% - 340px) / 2));
-  }
-
-  .u-section-1 .u-custom-html-1 {
     margin-bottom: 0;
-    margin-right: initial;
-    margin-left: initial;
+    margin-left: calc(((100% - 340px) / 2));
   }
 }.u-section-2 {
   background-image: url("images/blurred-gradient-abstract-background-with-vivid-primary-colors.jpg");

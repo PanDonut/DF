@@ -24,16 +24,14 @@
     <meta property="og:title" content="Settings">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
-  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-	<link id="mystylesheet" rel="stylesheet" type="text/css" href="light.css"></head>
+  <script src="jquery-2.1.4.js"></script></head>
   <body class="u-body">
     <section class="b u-clearfix u-grey-90 u-section-1" id="sec-fb9d">
       <div class="se u-absolute-hcenter u-expanded u-palette-1-base u-shape u-shape-rectangle u-shape-1"></div>
       <div class="sel u-custom-color-13 u-expanded-width u-shape u-shape-rectangle u-shape-2"></div>
       <img class="u-image u-image-default u-preserve-proportions u-image-1" src="images/cancel2.png" alt="" data-image-width="512" data-image-height="512" data-href="Duckfilms.html" data-page-id="34563113" data-animation-name="rotateIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
       <div class="u-clearfix u-custom-html u-custom-html-1">
-        <div id="overlay" class="b">
+        <div id="overlay">
           <div class="squares"></div>
         </div>
         <script> var overlay = document.getElementById("overlay");
@@ -63,7 +61,7 @@ window.addEventListener('load', function(){
 	position: absolute;
 	width: 15px;
 	height: 15px;
-	background: #fe0303;
+	background: #7289da;
 	top: -10px;
 	left: -10px;
 	animation: top ease 3s infinite;
@@ -73,7 +71,7 @@ window.addEventListener('load', function(){
 	position: absolute;
 	width: 15px;
 	height: 15px;
-	background: #fe0303;
+	background: #7289da;
 	bottom: -10px;
 	right: -10px;
 	animation: bottom ease 3s infinite;
@@ -142,24 +140,25 @@ window.addEventListener('load', function(){
 #overlay{
   height:100%;
   width:100%;
+  background:rgba(0, 0, 0, 1);
   position:fixed;
   left:0;
   top:0;
-  cursor: wait;
+  pointer-events: none
  } </style>
       </div>
       <div class="u-expanded-width u-tabs u-tabs-1">
         <ul class="u-border-2 u-border-grey-75 u-tab-list u-unstyled" role="tablist">
           <li class="u-tab-item" role="presentation">
-            <a class="active u-border-2 u-border-active-white u-border-hover-grey-5 u-border-no-bottom u-button-style u-custom-font u-heading-font u-tab-link u-text-active-white u-text-grey-15 u-tab-link-1" id="link-tab-657e" href="#tab-657e" role="tab" aria-controls="tab-657e" aria-selected="true">Motywy</a>
+            <a class="active u-border-2 u-border-active-white u-border-hover-grey-5 u-border-no-left u-border-no-right u-border-no-top u-button-style u-custom-font u-heading-font u-tab-link u-text-active-white u-text-grey-15 u-tab-link-1" id="link-tab-657e" href="#tab-657e" role="tab" aria-controls="tab-657e" aria-selected="true">Motywy</a>
           </li>
         </ul>
         <div class="u-tab-content">
           <div class="u-container-style u-tab-active u-tab-pane" id="tab-657e" role="tabpanel" aria-labelledby="link-tab-657e">
             <div class="u-container-layout u-container-layout-1">
               <div class="u-container-style u-group u-shape-rectangle u-group-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
-                <div class="u-container-layout u-container-layout-2">
-                  <h1 class="txt u-text u-title u-text-1">Motywy DuckFilms</h1>
+                <div class="u-container-layout u-valign-top-lg u-valign-top-md u-container-layout-2">
+                  <h1 class="txt u-text u-title u-text-1">Motywy DuckFlix</h1>
                   <div class="u-clearfix u-custom-html u-custom-html-2">
                     <div id="box">
                       <button style="background-color: white;color:black" class="btn btn-light" onclick="swapStyle('dark.css')">Jasny Motyw</button>
@@ -196,11 +195,11 @@ window.addEventListener('load', function(){
                   <div class="u-clearfix u-custom-html u-custom-html-3">
                     <div id="box" class="popup">
                       <button style="background-color: #5662f6;color:white" class="btn btn-dc" onclick="swapStyle('dc.css')" onmouseover="dcpop()" onmouseout="dcpopclose()">Discord</button>
-                      <span class="popuptext" id="dc">Autor Duckfilms</span>
+                      <span class="popuptext" id="dc">Autor Duckflix</span>
                     </div>
                     <div id="box" class="popup">
                       <button style="background-color: #0c0c0c;color:white" class="btn btn-old" onclick="swapStyle('old.css')" onmouseover="oldpop()" onmouseout="oldpopclose()">Stary Duckflix</button>
-                      <span class="popuptext" id="old">Autor Duckfilms</span>
+                      <span class="popuptext" id="old">Autor Duckflix</span>
                     </div>
                     <div id="box" class="popup">
                       <button style="background-color: green;color:white" class="btn btn-old" onclick="swapStyle('forest.css')" onmouseover="forestpop()" onmouseout="forestpopclose()">Las</button>

@@ -26,9 +26,7 @@
     <meta property="og:title" content="Duckfilms">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
-  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-	<link id="mystylesheet" rel="stylesheet" type="text/css" href="light.css"></head>
+  <script src="jquery-2.1.4.js"></script></head>
   <body data-home-page="Duckfilms.html" data-home-page-title="Duckfilms" class="u-body u-stick-footer"><header class="h u-black u-clearfix u-header u-sticky u-header" id="sec-1617"><div class="u-clearfix u-sheet u-sheet-1">
         <a href="Duckfilms.html" data-page-id="34563113" class="duckf u-image u-image-default u-logo u-image-1" data-image-width="658" data-image-height="154" title="Duckfilms" data-animation-name="pulse" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
           <img src="images/Duckflix2.png" class="u-logo-image u-logo-image-1" data-image-width="156.923" alt="DuckFlix">
@@ -55,10 +53,10 @@
           </div>
           <div class="u-effect-fade u-effect-hover-liftUp u-gallery-item" data-href="Duckfilms-Asdf.html" data-page-id="927425910">
             <div class="u-back-slide" data-image-width="1280" data-image-height="720">
-              <img class="u-back-image u-expanded" src="images/wp7031169-asdfmovie-wallpapers.jpg" alt="asdfmovie">
+              <img class="u-back-image u-expanded" src="images/wp7031169-asdfmovie-wallpapers.jpg" alt="ASDF Movie">
             </div>
             <div class="u-over-slide u-shading u-over-slide-2">
-              <h3 class="u-gallery-heading u-text-white" style="font-size: 1.5rem;">asdfmovie</h3>
+              <h3 class="u-gallery-heading u-text-white" style="font-size: 1.5rem;">ASDF Movie</h3>
               <p class="u-gallery-text u-text-white" style="font-size: 1rem;">Seria krótkich filmów komediowych Toma Ridgewella</p>
             </div>
           </div>
@@ -136,7 +134,7 @@ client.on('ready', () => {
 client.login(clientID, { accessToken: params.get('access_token'), scopes }); </script>
       </div>
       <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-3">
-        <div id="overlay" class="b">
+        <div id="overlay">
           <div class="squares"></div>
         </div>
         <script> var overlay = document.getElementById("overlay");
@@ -166,7 +164,7 @@ window.addEventListener('load', function(){
 	position: absolute;
 	width: 15px;
 	height: 15px;
-	background: #fe0303;
+	background: #7289da;
 	top: -10px;
 	left: -10px;
 	animation: top ease 3s infinite;
@@ -176,7 +174,7 @@ window.addEventListener('load', function(){
 	position: absolute;
 	width: 15px;
 	height: 15px;
-	background: #fe0303;
+	background: #7289da;
 	bottom: -10px;
 	right: -10px;
 	animation: bottom ease 3s infinite;
@@ -245,10 +243,11 @@ window.addEventListener('load', function(){
 #overlay{
   height:100%;
   width:100%;
+  background:rgba(0, 0, 0, 1);
   position:fixed;
   left:0;
   top:0;
-  cursor: wait;
+  pointer-events: none
  } </style>
       </div>
     </section>

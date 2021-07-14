@@ -70,7 +70,7 @@
 
 .u-section-1 .u-custom-html-3 {
   min-height: 113px;
-  width: 996px;
+  height: auto;
   margin: 15px 0 0 61px;
 }
 
@@ -121,7 +121,6 @@
   .u-section-1 .u-custom-html-3 {
     margin-right: 470px;
     margin-left: 0;
-    height: auto;
     width: 468px;
   }
 

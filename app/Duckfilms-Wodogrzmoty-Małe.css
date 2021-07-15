@@ -219,7 +219,8 @@
   animation-duration: 1000ms;
   background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/9.png");
   background-position: 50% 50%;
-  margin: 9px auto 0 87px;
+  height: auto;
+  margin: 9px auto 0 88px;
 }
 
 .u-section-1 .u-container-layout-12 {
@@ -306,18 +307,7 @@
 
 .u-section-1 .u-text-14 {
   font-family: calibri-bold;
-  margin: -27px calc(((100% - 1140px) / 2) + 927px) 0 calc(((100% - 1140px) / 2) + 91px);
-}
-
-.u-section-1 .u-btn-1 {
-  border-style: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  letter-spacing: 1px;
-  background-image: none;
-  margin: 9px auto 60px calc(((100% - 1140px) / 2) + -38px);
-  padding: 9px 21px 11px 20px;
+  margin: -27px calc(((100% - 1140px) / 2) + 927px) 60px calc(((100% - 1140px) / 2) + 91px);
 }
 
 @media (max-width: 1199px) {
@@ -455,6 +445,7 @@
     margin-top: -159px;
     margin-right: 45px;
     margin-left: auto;
+    height: auto;
   }
 
   .u-section-1 .u-container-layout-12 {
@@ -515,11 +506,6 @@
     margin-top: -24px;
     margin-right: calc(((100% - 940px) / 2) + 752px);
     margin-left: calc(((100% - 940px) / 2) + 114px);
-  }
-
-  .u-section-1 .u-btn-1 {
-    margin-top: 20px;
-    margin-left: calc(((100% - 940px) / 2) + -26px);
   }
 }
 
@@ -659,11 +645,6 @@
     margin-right: calc(((100% - 720px) / 2) + 603px);
     margin-left: calc(((100% - 720px) / 2) + 43px);
   }
-
-  .u-section-1 .u-btn-1 {
-    margin-top: 14px;
-    margin-left: calc(((100% - 720px) / 2) + -38px);
-  }
 }
 
 @media (max-width: 767px) {
@@ -729,12 +710,7 @@
 
   .u-section-1 .u-text-14 {
     margin-right: calc(((100% - 540px) / 2) + 378px);
-    margin-bottom: 60px;
     margin-left: calc(((100% - 540px) / 2) + 88px);
-  }
-
-  .u-section-1 .u-btn-1 {
-    margin-left: calc(((100% - 540px) / 2));
   }
 }
 
@@ -824,15 +800,7 @@
   }
 
   .u-section-1 .u-text-14 {
-    margin-top: 0;
-    margin-right: calc(((100% - 340px) / 2) + 266px);
-    margin-left: calc(((100% - 340px) / 2));
-  }
-
-  .u-section-1 .u-btn-1 {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: calc(((100% - 340px) / 2));
+    margin: 0 calc(((100% - 340px) / 2) + 266px) 0 calc(((100% - 340px) / 2));
   }
 }.u-section-2 {
   background-image: url("images/blurred-gradient-abstract-background-with-vivid-primary-colors.jpg");

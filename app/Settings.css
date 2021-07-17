@@ -15,22 +15,17 @@
   margin-bottom: 0;
 }
 
-.u-section-1 .u-image-1 {
-  width: 46px;
-  height: 46px;
-  animation-duration: 1000ms;
-  margin: -91px 0 0 auto;
-}
-
 .u-section-1 .u-custom-html-1 {
   min-height: 22px;
   width: 1254px;
-  margin: -46px calc(((100% - 1140px) / 2) + -34px) 0 0;
+  margin: -91px calc(((100% - 1140px) / 2) + -34px) 0 0;
 }
 
 .u-section-1 .u-tabs-1 {
   min-height: 814px;
-  margin: 0 auto 0 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: auto;
 }
 
 .u-section-1 .u-tab-link-1 {
@@ -70,16 +65,22 @@
 
 .u-section-1 .u-custom-html-3 {
   min-height: 113px;
-  height: auto;
   margin: 15px 0 0 61px;
 }
 
 .u-section-1 .u-custom-html-4 {
-  margin-bottom: 60px;
+  margin-bottom: 0;
   margin-top: 703px;
   margin-left: calc(((100% - 1140px) / 2) + 259px);
   min-height: 348px;
   width: 772px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 46px;
+  height: 46px;
+  animation-duration: 1000ms;
+  margin: -1887px 0 60px auto;
 }
 
 @media (max-width: 1199px) {
@@ -91,12 +92,6 @@
   .u-section-1 .u-custom-html-1 {
     width: 940px;
     margin-right: calc(((100% - 940px) / 2));
-  }
-
-  .u-section-1 .u-tabs-1 {
-    height: auto;
-    margin-right: initial;
-    margin-left: initial;
   }
 
   .u-section-1 .u-group-1 {
@@ -121,6 +116,7 @@
   .u-section-1 .u-custom-html-3 {
     margin-right: 470px;
     margin-left: 0;
+    height: auto;
     width: 468px;
   }
 

@@ -6,9 +6,8 @@
     <!-- City -->
     <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
           rel="stylesheet" />
-
+    <link href="https://raw.githubusercontent.com/TylerZubke/Videojs-AFK-Monitor/master/dist/videojs.afk-monitor.min.css" rel="stylesheet">
     <!-- Then, in the player -->
-
     <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
     <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
 </head>
@@ -20,7 +19,7 @@
            preload="auto"
            width="640"
            height="264"
-           poster="MY_VIDEO_POSTER.jpg"
+           poster="https://github.com/PanDonut/pandonut.github.io/raw/main/duckposter.png"
            data-setup="{}">
         <source src="https://data.pandasuite.com/videos/60e7630b49a0b120640010b0-universal_1920_1080_20_main_3-0.mp4" type="video/mp4" />
         <p class="vjs-no-js">
@@ -41,4 +40,9 @@
             background-color: black;
         }
     </style>
+    <script type="text/javascript">
+        var video = videojs('my-video');
+        video.AFKMonitor();
+    </script>
+    <script src="https://raw.githubusercontent.com/PanDonut/pandonut.github.io/main/afk.js"></script>
 </body>

@@ -68,13 +68,13 @@
   font-size: 0.875rem;
   letter-spacing: 1px;
   background-image: none;
-  margin: 13px auto 0 calc(((100% - 1140px) / 2) + -38px);
+  margin: 12px auto 0 calc(((100% - 1140px) / 2) + -38px);
   padding: 9px 21px 11px 20px;
 }
 
 .u-section-1 .u-text-5 {
   font-size: 1.875rem;
-  margin: 302px calc(((100% - 1140px) / 2) + 1014px) 0 calc(((100% - 1140px) / 2) + -38px);
+  margin: 303px calc(((100% - 1140px) / 2) + 1014px) 0 calc(((100% - 1140px) / 2) + -38px);
 }
 
 .u-section-1 .u-gallery-1 {
@@ -171,7 +171,7 @@
   }
 
   .u-section-1 .u-image-1 {
-    margin-top: 56px;
+    margin-top: 57px;
     margin-right: initial;
     margin-left: initial;
   }

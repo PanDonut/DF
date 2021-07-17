@@ -1,2 +1,0 @@
-<TileUpdate Recurrence  = "halfHour" | "hour" | "sixHours" | "twelveHours" | "daily"
-            UriTemplate = A string between 1 and 2084 characters in length. />

@@ -1,0 +1,34 @@
+.u-section-1 {
+  min-height: 795px;
+}
+
+.u-section-1 .u-custom-html-1 {
+  width: 570px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  min-height: 228px;
+  height: auto;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-custom-html-1 {
+    width: 470px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-custom-html-1 {
+    width: 340px;
+  }
+}@font-face {
+  font-family: 'calibri-bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/calibri-bold.ttf);
+}@font-face {
+  font-family: 'calibri-regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/calibri-regular.ttf);
+}

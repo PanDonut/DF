@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="pl-PL">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Logowanie</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel="stylesheet" href="Logowanie.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/style.css"> 
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "DuckFlix"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Logowanie">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<link id="mystylesheet" rel="stylesheet" type="text/css" href="light.css"></head>
+  <body data-home-page="Logowanie.html" data-home-page-title="Logowanie" class="b" style="background-image: linear-gradient(to right, #3e3e47, #292e33);">
+  	<section class="n">
+  		<div class="login-card">
+  			<style>
+				  .n {
+					overflow: hidden;
+					position: fixed;
+					margin: auto;
+					padding-top: 150px;
+					padding-left: 100px;
+					z-index: 10000;
+				  }
+  			</style>
+  			<h1>Logowanie</h1>
+  			<form>
+  				<script type="text/javascript" src="scripts/login.js"></script>
+  				<input type="text" name="userid" placeholder="Nazwa">
+  				<input type="password" name="pswrd" placeholder="Hasło">
+  				<input type="button" onclick="check(form)" name="login" class="login login-submit" value="Zaloguj">
+  			</form>
+  			<p><a href="forgot-password.html">Zapomniałeś hasła?</a></p>
+  		</div>
+  	</section>
+  	<section class="b u-clearfix u-section-1" id="sec-ca24">
+  		<div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
+  			<div class="module" id="module"></div>
+  			<style>
+				  .module {
+					width: 1920px;
+					height: 1080px;
+					border-radius: 500px;
+					background-image: url(https://raw.githubusercontent.com/PanDonut/pandonut.github.io/main/points.png);
+					background-size: 500px 500px;
+					margin-left: -120px;
+					margin-top: -120px;
+					z-index: 0;
+				  }
+  			</style>
+  			<script>
+				  const el = document.querySelector("#module");
+				  el.addEventListener("mousemove", (e) => {
+					  el.style.backgroundPositionX = -e.offsetX + "px";
+					  el.style.backgroundPositionY = -e.offsetY + "px";
+				  });</script>
+  		</div>
+  		<div class="u-clearfix u-custom-html u-expanded-width u-custom-html-2">
+  			<div id="overlay" class="b">
+  				<div class="squares"></div>
+  			</div>
+  			<script>
+				  var overlay = document.getElementById("overlay");
+				  window.addEventListener('load', function () {
+					  overlay.style.display = 'none';
+				  })</script>
+  			<style>
+				  body {
+					background: #2c2f33;
+				  }
+
+				  .bcc {
+					background-color: black;
+				  }
+
+				  .squares {
+					position: fixed;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+					width: 50px;
+					height: 50px;
+					animation: scale ease 1.4s infinite;
+				  }
+
+					.squares::before {
+						content: '';
+						position: absolute;
+						width: 15px;
+						height: 15px;
+						background: #fe0303;
+						top: -10px;
+						left: -10px;
+						animation: top ease 3s infinite;
+					}
+
+					.squares::after {
+						content: '';
+						position: absolute;
+						width: 15px;
+						height: 15px;
+						background: #fe0303;
+						bottom: -10px;
+						right: -10px;
+						animation: bottom ease 3s infinite;
+					}
+
+				  @keyframes top {
+					0% {
+						top: -10px;
+					}
+
+					20% {
+						top: 100%;
+						left: -10px;
+					}
+
+					40% {
+						left: 100%;
+						top: 100%;
+						transform: rotate(180deg);
+					}
+
+					60% {
+						top: -10px;
+						left: 100%;
+					}
+
+					80% {
+						top: -10px;
+						transform: rotate(360deg);
+					}
+
+					100% {
+						left: -10px;
+					}
+				  }
+
+				  @keyframes bottom {
+					0% {
+						bottom: -10px;
+					}
+
+					20% {
+						bottom: 100%;
+						right: -10px;
+					}
+
+					40% {
+						right: 100%;
+						bottom: 100%;
+						transform: rotate(180deg);
+					}
+
+					60% {
+						bottom: -10px;
+						right: 100%;
+					}
+
+					80% {
+						bottom: -10px;
+						transform: rotate(360deg);
+					}
+
+					100% {
+						right: -10px;
+					}
+				  }
+
+				  @keyframes scale {
+					0% {
+						transform: scale(1);
+					}
+
+					50% {
+						transform: scale(0.7);
+					}
+
+					100% {
+						transform: scale(1);
+					}
+				  }
+
+				  #overlay {
+					height: 100%;
+					width: 100%;
+					position: fixed;
+					left: 0;
+					top: 0;
+					cursor: wait;
+					background-color: black;
+				  }
+  			</style>
+  		</div>
+  	</section>
+        <script type="text/javascript"> var setTheme = localStorage.getItem('theme')
+		console.log('theme:', setTheme)
+		if (setTheme == null){
+			swapStyle('light.css')
+		}else{
+			swapStyle(setTheme)
+		}
+		function swapStyle(sheet){
+			document.getElementById('mystylesheet').href = sheet
+			localStorage.setItem('theme', sheet)
+		}
+		/*
+		var setTheme = localStorage.getItem('theme')
+		if (setTheme == null){
+			swapStyles('light.css')
+		}else{
+			swapStyles(setTheme)
+		}
+			
+		
+		function swapStyles(sheet){
+			document.getElementById('mystylesheet').href = sheet
+			localStorage.setItem('theme', sheet)
+		}
+		*/ </script>
+  </body>
+</html>

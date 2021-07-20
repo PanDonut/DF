@@ -1,2 +1,2 @@
 1.2
-https://app.duckfilms.cloudns.ph/Webb.exe
+https://github.com/PanDonut/pandonut.github.io/raw/main/Webb.exe

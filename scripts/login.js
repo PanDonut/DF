@@ -1,6 +1,6 @@
 function check(form) {
-	username = new Array("admin1", "admin2", "Mistfall", "Jendros", "PanDonut", "Hubert");
-	password = new Array("admin1", "admin2", "mPMql", "IvafB", "rura", "hubert");
+	username = new Array("admin1", "admin2", "Mistfall", "Jendros", "PanDonut", "Hubert", "Timek");
+	password = new Array("admin1", "admin2", "mPMql", "IvafB", "rura", "hubert", "lNJKl");
 	if(form.userid.value == username[0] && form.pswrd.value == password[0]||form.userid.value == username[1] && form.pswrd.value == password[1]) {
 		location.replace('#adminhome')/* The Administrator homepage */
 	}
@@ -15,6 +15,9 @@ function check(form) {
 	}
 	else if (form.userid.value == username[5] && form.pswrd.value == password[5]) {
 		location.replace('https://app.duckfilms.cloudns.ph/user/Hubert.html')/* The members homepage */
+	}
+	else if (form.userid.value == username[6] && form.pswrd.value == password[6]) {
+		location.replace('https://app.duckfilms.cloudns.ph/user/Timek.html')/* The members homepage */
 	}
 	else if(form.userid.value == username[0]||form.userid.value == username[1]||form.userid.value == username[2]) {
 		alert("Incorrect Password")

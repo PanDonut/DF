@@ -8,7 +8,7 @@ Duckfilms jest Open Source VOD stworzonym przez TheDuckCraft Studios
 ## Autorzy
 
 - [*@PanDonut*](https://github.com/PanDonut)
-- *@Hubert*
+- [*@Hubert*](https://github.com/HubertK778)
 
   
 ## Biblioteki użyte przez Duckfilms

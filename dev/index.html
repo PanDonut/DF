@@ -14,29 +14,30 @@
     <!-- nav -->
     <div id="nav" class="nav">
       <img class="nav__logo" src="images/duckfilms.png" alt="" />
-      <img class="nav__avatar" src="images/netflix-avatar.png" alt="" />
+      <img class="nav__avatar" src="images/netflix-avatar.png" alt="" />  
     </div>
 
     <!-- header -->
-    <header class="banner">
-      <div class="banner__contents">  
+      
+    <header class="banner" id="banner">
+      <div class="banner__contents" id="banner_contents">  
         <h1 class="banner__title">Joker</h1>
         <div class="banner__buttons">
-          <a href="player/joker/index.html"><button class="banner__button">Oglądaj</button></a>
-          <a href="player/trailer/joker.html"><button class="banner__button">Zwiastun</button></a>        
+          <a href="player/joker/index.html"><button class="banner__button fadeOutLink" id="og">Oglądaj</button></a>
+          <button class="banner__button tr banner__buttonn" onmouseover="gif()" onmouseout="off()">Zwiastun</button>    
         </div>
-        <h1 class="banner__description">
+        <h1 class="banner__description" id="desc">
           Arthur Fleck nie ma łatwego życia. Dorabia na ulicach Gotham w roli klauna, ale natyka się na przybierający na intensywności społeczny ostracyzm, wliczając w to przemoc fizyczną. Próbuje śmiać się ze swej mizernej doli na scenie, licząc na karierę komika stand-upowego, ale widzowie z jakiegoś powodu nie chcą się śmiać...
         </h1>
       </div>
-      <div class="banner--fadeBottom"></div>
+          <div class="banner--fadeBottom" id="grad"></div>
     </header>
 
     <!-- Originale/Obejrzyj również -->
     <div class="row hidden">
       <h2>Duckfilms Originals</h2>
       <div class="row__posters container">
-        <img class="row__poster row__posterLarge item" src="images/large-movie1.jpg" alt="" />
+        <img class="row__poster row__posterLarge item fadeOutLink" src="images/large-movie1.jpg" alt="" />
       </div>
     </div>
 
@@ -44,9 +45,9 @@
     <div class="row">
       <h2>Filmy Fantasy</h2>
       <div class="row__posters container">
-        <a class="item" href="show/Duckfilms-Harry-Potter-i-Kamie%C5%84-Filozoficzny.html"><img class="row__poster" src="images/wp4879828-harry-potter-and-the-philosophers-stone-wallpapers.jpg"/></a>
+        <a class="item fadeOutLink" href="show/Duckfilms-Harry-Potter-i-Kamie%C5%84-Filozoficzny.html"><img class="row__poster" src="images/wp4879828-harry-potter-and-the-philosophers-stone-wallpapers.jpg"/></a>
 
-        <a class="item" href="show/Duckfilms-Harry-Potter-i-Komnata-Tajemnic.html"><img class="row__poster" src="images/6744481.jpg"/></a>
+        <a class="item fadeOutLink" href="show/Duckfilms-Harry-Potter-i-Komnata-Tajemnic.html"><img class="row__poster" src="images/6744481.jpg"/></a>
       </div>
     </div>
       
@@ -54,7 +55,7 @@
     <div class="row">
       <h2>Filmy Akcji</h2>
       <div class="row__posters container">
-          <a class="item" href=""><img class="row__poster" src="images/small-movie1.jpg"/></a>
+          <a class="item fadeOutLink" href=""><img class="row__poster" src="images/small-movie1.jpg"/></a>
       </div>
     </div>
 
@@ -62,7 +63,7 @@
     <div class="row">
       <h2>Filmy Komediowe</h2>
       <div class="row__posters container">
-          <a class="item" href="player/mikolajek/1.html"><img class="row__poster" src="images/mikolajek-tapety-na-pulpit-1.jpg"/></a>
+          <a class="item fadeOutLink" href="player/mikolajek/1.html"><img class="row__poster" src="images/mikolajek-tapety-na-pulpit-1.jpg"/></a>
       </div>
     </div>
 
@@ -70,7 +71,7 @@
     <div class="row">
       <h2>Horrory</h2>
       <div class="row__posters container">
-          <a class="item" href="player/hpkt/index.html"><img class="row__poster" src="images/small-movie1.jpg"/></a>
+          <a class="item fadeOutLink" href="player/hpkt/index.html"><img class="row__poster" src="images/small-movie1.jpg"/></a>
       </div>
     </div>
 
@@ -78,7 +79,7 @@
     <div class="row">
       <h2>Filmy Romantyczne</h2>
       <div class="row__posters container">
-          <a class="item" href="player/hpkt/index.html"><img class="row__poster" src="images/small-movie1.jpg"/></a>
+          <a class="item fadeOutLink" href="player/hpkt/index.html"><img class="row__poster" src="images/small-movie1.jpg"/></a>
       </div>
     </div>
 
@@ -86,7 +87,7 @@
     <div class="row">
       <h2>Filmy Dokumentalne</h2>
       <div class="row__posters container">
-          <a class="item" href="player/hpkt/index.html"><img class="row__poster" src="images/small-movie1.jpg"/></a>
+          <a class="item fadeOutLink" href="player/hpkt/index.html"><img class="row__poster" src="images/small-movie1.jpg"/></a>
       </div>
     </div>
       
@@ -94,8 +95,8 @@
     <div class="row">
       <h2>Seriale</h2>
       <div class="row__posters container">
-        <a class="item" href="show/Duckfilms-Wodogrzmoty-Ma%C5%82e.html"><img class="row__poster" src="images/675452.png"/></a>
-        <a class="item" href="show/Duckfilms-Asdf.html"><img class="row__poster" src="images/wp7031169-asdfmovie-wallpapers.jpg"/></a>
+        <a class="item fadeOutLink" href="show/Duckfilms-Wodogrzmoty-Ma%C5%82e.html"><img class="row__poster" src="images/675452.png"/></a>
+        <a class="item fadeOutLink" href="show/Duckfilms-Asdf.html"><img class="row__poster" src="images/wp7031169-asdfmovie-wallpapers.jpg"/></a>
       </div>
     </div>
 
@@ -110,5 +111,37 @@
       });
     </script>
       </div>
+      <script>
+          function gif() {
+    const banner = document.getElementById('banner');
+              banner.classList.remove('banner');
+              banner.classList.add('gif');
+              const grad = document.getElementById('grad');
+              grad.classList.add('banner--');
+              grad.classList.remove('banner--fadeBottom');
+              const desc = document.getElementById('desc');
+              desc.classList.remove('banner__description');
+              desc.classList.add('banner__desc');
+              const og = document.getElementById('og');
+              og.classList.remove('fadeOutLink');
+              og.classList.add('ogl');
+              document.getElementsByClassName('nav')[0].style.visibility = 'hidden';
+}   
+          function off() {
+    const banner = document.getElementById('banner');
+              banner.classList.add('banner');
+              banner.classList.remove('gif');
+              const grad = document.getElementById('grad');
+              grad.classList.add('banner--fadeBottom');
+              grad.classList.remove('banner--');
+              const desc = document.getElementById('desc');
+              desc.classList.add('banner__description');
+              desc.classList.remove('banner__desc');
+              const og = document.getElementById('og');
+              og.classList.add('fadeOutLink');
+              og.classList.remove('ogl');
+              document.getElementsByClassName('nav')[0].style.visibility = 'visible';
+}   
+      </script>
   </body>
 </html>

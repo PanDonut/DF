@@ -270,9 +270,8 @@ body {
 }
 
 .gif {
-  background-image: url('https://www.dl.dropboxusercontent.com/s/9b251omaf7axqie/jkr.gif')
-
-');
+  background-image: url('https://www.dl.dropboxusercontent.com/s/9b251omaf7axqie/jkr.gif');
+}
   background-size: cover;
   background-position: center center;
   color: #fff0;

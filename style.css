@@ -427,3 +427,34 @@ body {
   transition: transform 450ms;
   opacity: 0;
 }
+
+.button-submit {
+	background-color:#ff0000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:7px 20px;
+	text-decoration:none;
+    border-radius: 0.2vw;
+}
+.button-submit:hover {
+	background-color:#d10000;
+}
+.button-submit:active {
+	position:relative;
+	top:1px;
+}
+
+.paragraph {
+    color: white;
+    background-color: black;
+    padding: 20px 20px 20px 20px;
+}
+
+footer {
+    padding-top: 200px;
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(7,6,9,0.6110819327731092) 52%, rgba(13,12,17,0) 100%);
+}

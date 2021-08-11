@@ -18,6 +18,15 @@ body {
   max-height: 200px;
   margin-right: 10px;
   transition: transform 450ms;
+  opacity: 1;
+  -webkit-animation: opa 8s ease;
+    -moz-animation: opa 8s ease;
+    -o-animation: opa 8s ease;
+    animation: opa 8s ease;
+}
+
+.row__poster::before {
+    
 }
 
 .parent {
@@ -52,13 +61,18 @@ body {
 
 /* banner */
 .banner {
-  background-image: url('images/banner.jpg');
+  background: url('images/banner.jpg');
   background-size: cover;
   background-position: center center;
   color: white;
   object-fit: contain;
   height: 448px;
   transition: ease-in-out 1s;
+  -webkit-animation: loadb 5s ease-in-out;
+    -moz-animation: loadb 5s ease-in-out;
+    -o-animation: loadb 5s ease-in-out;
+    animation: loadb 5s ease-in-out;
+  
 }
 
 .tr:hover{
@@ -216,6 +230,24 @@ body {
   transition: 500ms;
   padding: 0px 0px 0px 0px;
   flex: 0 0 auto;
+  background: transparent;
+    background-size: 400% 400%;
+
+    -webkit-animation: load 8s ease-in-out;
+    -moz-animation: load 8s ease-in-out;
+    -o-animation: load 8s ease-in-out;
+    animation: load 8s ease-in-out;
+    border-radius: 0px;
+    height: 200px;
+    margin-left: 10px
+}
+
+.loadedd {
+  position: relative;
+  display: inline-block;
+  transition: 500ms;
+  padding: 0px 0px 0px 0px;
+  flex: 0 0 auto;
 }
 
 .item:hover {
@@ -294,4 +326,104 @@ body {
 .ogl {
     opacity: 0;
     transition: 2s;
+}
+
+@-webkit-keyframes load {
+    0%{background: #fff; border-radius: 20px;}
+    25%{background: #6b6b6b; border-radius: 20px;}
+    50%{background: #fff; border-radius: 20px;}
+    75%{background: #6b6b6b; border-radius: 20px;}
+    95%{background: #fff; border-radius: 20px;}
+    100%{background: transparent; border-radius: 0px;}
+}
+@-moz-keyframes load {
+    0%{background: #fff; border-radius: 20px;}
+    25%{background: #6b6b6b; border-radius: 20px;}
+    50%{background: #fff; border-radius: 20px;}
+    75%{background: #6b6b6b; border-radius: 20px;}
+    95%{background: #fff; border-radius: 20px;}
+    100%{background: transparent; border-radius: 0px;}
+}
+@-o-keyframes load {
+    0%{background: #fff; border-radius: 20px;}
+    25%{background: #6b6b6b; border-radius: 20px;}
+    50%{background: #fff; border-radius: 20px;}
+    75%{background: #6b6b6b; border-radius: 20px;}
+    95%{background: #fff; border-radius: 20px;}
+    100%{background: transparent; border-radius: 0px;}
+}
+@keyframes load {
+    0%{background: #fff; border-radius: 20px;}
+    25%{background: #6b6b6b; border-radius: 20px;}
+    50%{background: #fff; border-radius: 20px;}
+    75%{background: #6b6b6b; border-radius: 20px;}
+    95%{background: #fff; border-radius: 20px;}
+    100%{background: transparent; border-radius: 0px;}
+}
+
+@-webkit-keyframes opa {
+    0%{opacity: 0}
+    50%{opacity: 0}
+    95%{opacity: 0}
+    100%{opacity: 1}
+}
+@-moz-keyframes opa {
+    0%{opacity: 0}
+    50%{opacity: 0}
+    95%{opacity: 0}
+    100%{opacity: 1}
+}
+@-o-keyframes opa {
+    0%{opacity: 0}
+    50%{opacity: 0}
+    95%{opacity: 0}
+    100%{opacity: 1}
+}
+@keyframes opa {
+    0%{opacity: 0}
+    50%{opacity: 0}
+    95%{opacity: 0}
+    100%{opacity: 1}
+}
+
+@-webkit-keyframes loadb {
+    0%{background: #fff; border-radius: 0px;}
+    25%{background: #6b6b6b; border-radius: 0px;}
+    50%{background: #fff; border-radius: 0px;}
+    75%{background: #6b6b6b; border-radius: 0px;}
+    95%{background: #fff; border-radius: 0px;}
+    100%{background: url('images/banner.jpg'); border-radius: 0px;}
+}
+@-moz-keyframes loadb {
+    0%{background: #fff; border-radius: 0px;}
+    25%{background: #6b6b6b; border-radius: 0px;}
+    50%{background: #fff; border-radius: 0px;}
+    75%{background: #6b6b6b; border-radius: 0px;}
+    95%{background: #fff; border-radius: 0px;}
+    100%{background: url('images/banner.jpg'); border-radius: 0px;}
+}
+@-o-keyframes loadb {
+    0%{background: #fff; border-radius: 0px;}
+    25%{background: #6b6b6b; border-radius: 0px;}
+    50%{background: #fff; border-radius: 0px;}
+    75%{background: #6b6b6b; border-radius: 0px;}
+    95%{background: #fff; border-radius: 0px;}
+    100%{background: url('images/banner.jpg'); border-radius: 0px;}
+}
+@keyframes loadb {
+    0%{background: #fff; border-radius: 0px;}
+    25%{background: #6b6b6b; border-radius: 0px;}
+    50%{background: #fff; border-radius: 0px;}
+    75%{background: #6b6b6b; border-radius: 0px;}
+    95%{background: #fff; border-radius: 0px;}
+    100%{background: url('images/banner.jpg'); border-radius: 0px;}
+}
+
+.loadeddd {
+  width: 100%;
+  object-fit: contain;
+  max-height: 200px;
+  margin-right: 10px;
+  transition: transform 450ms;
+  opacity: 0;
 }

@@ -1,6 +1,6 @@
 function check(form) {
-	username = new Array("admin1", "admin2", "Mistfall", "Jendros", "PanDonut", "Hubert", "Timek");
-	password = new Array("admin1", "admin2", "mPMql", "IvafB", "rura", "hubert", "lNJKl");
+	username = new Array("admin1", "admin2", "Mistfall", "Jendros", "PanDonut", "Hubert", "Timek", "Mati808");
+	password = new Array("admin1", "admin2", "mPMql", "IvafB", "rura", "hubert", "lNJKl", "Zolw");
 	if(form.userid.value == username[0] && form.pswrd.value == password[0]||form.userid.value == username[1] && form.pswrd.value == password[1]) {
 		location.replace('#adminhome')/* The Administrator homepage */
 	}
@@ -21,6 +21,10 @@ function check(form) {
 		location.replace('../');
 	}
 	else if (form.userid.value == username[6] && form.pswrd.value == password[6]) {
+        window.localStorage.setItem('session', 'true');
+		location.replace('../');
+	}
+	else if (form.userid.value == username[7] && form.pswrd.value == password[7]) {
         window.localStorage.setItem('session', 'true');
 		location.replace('../');
 	}

@@ -13,8 +13,12 @@
 </head>
 
 <body class="body" id="body">
+  <div class="ager">
+    <h2 class="redline">&#12644</h2>
+    <h1>Kategoria wiekowa 7+</h1>
+  </div>
     <video id="my-video"
-           class="video-js vjs-theme-city video"
+           class="video-js vjs-theme-city video vjs-big-play-centered"
            controls
            preload="auto"
            width="640"
@@ -28,9 +32,9 @@
             <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
         </p>
     </video>
-    
-<button onclick="window.location.href='2.html'" class="next" id="next">Następny odcinek ➤</button>
-    
+
+<button onclick="window.location.href='11.html'" class="next" id="next">Następny odcinek ➤</button>
+
     <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
     <style>
         .video {
@@ -44,20 +48,20 @@
             overflow: hidden;
             transition: 2s;
         }
-        
+
         .skip {
             background-color: black;
             overflow: hidden;
             transition: 1s;
         }
-        
+
         .fadebody {
             background-color: black;
             overflow: hidden;
             transition: 1s;
             opacity: 0;
         }
-        
+
         .fadevid {
             width: 100%;
             height: 100%;
@@ -68,7 +72,7 @@
         var video = videojs('my-video');
         video.AFKMonitor();
     </script>
-    
+
     <style>
         .next {
             visibility: hidden;
@@ -118,7 +122,7 @@
             border: solid;
             width: 200px;
         }
-        
+
         .skipb {
             visibility: visible;
             background-color: white;
@@ -138,24 +142,24 @@
             width: 360px;
             font-size: 37px;
         }
-        
+
         .nextgo:hover {
             -webkit-animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	        animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
             cursor: pointer;
         }
-        
+
         .nextactive:hover {
             -webkit-animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	        animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
             cursor: pointer;
         }
-        
+
         .vidnon {
             background-color: black;
         }
-        
-        
+
+
         @-webkit-keyframes shadow-pop-bl {
   0% {
     -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
@@ -195,11 +199,11 @@
         vid.classList.add('vidnon');
         next.classList.add('nextactive');
         next.classList.remove('next');
-        setTimeout(function(){ next.classList.add('nextgo');  }, 1000);    
-        setTimeout(function(){ body.classList.add('skip'); next.classList.add('skipb');  }, 9000); 
+        setTimeout(function(){ next.classList.add('nextgo');  }, 1000);
+        setTimeout(function(){ body.classList.add('skip'); next.classList.add('skipb');  }, 9000);
         setTimeout(function(){ body.classList.add('fadebody');  }, 11000);
         setTimeout(function(){ vid.classList.add('fadevid');  }, 500);
-        setTimeout(function(){ window.location.href='2.html';  }, 12000);
+        setTimeout(function(){ window.location.href='11.html';  }, 12000);
      });
 }, 1000);
 </script>

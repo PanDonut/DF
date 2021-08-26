@@ -1,118 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Duckfilms</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="log.js"></script>
-      <script type="text/javascript" src="warning.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="    viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
-  </head>
-  <body>
+<script src="form.js"></script>
+<script src="../../warning.js"></script>
+    <title>Logowanie</title>
+</head>
+<body>
+    <div class="formContainer box">
+    <h1>Logowanie</h1>
+    <input type="email" placeholder="Email" id="email">
+    <input type="password" placeholder="Hasło" id="password">
+    <button onclick="signIn()" id="signIp">Zaloguj się</button>
+    <button onclick="signOut()" id="signOut">Wyloguj się</button>
+</div>
+    <style>
+          body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  --s: 25vmin;
+  --p: calc(var(--s) / 2);
+  --c1: #FF0000;
+  --c2: #b50000;
+  --c3: #0d0c11;
+  --bg: var(--c3);
+  --d: 10000ms;
+  --e: cubic-bezier(0.76, 0, 0.24, 1);
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--c2) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
+  background-size: var(--s) var(--s);
+  background-position: 
+    calc(var(--p) *  1) calc(var(--p) *  0), 
+    calc(var(--p) * -1) calc(var(--p) *  1), 
+    calc(var(--p) *  1) calc(var(--p) * -1), 
+    calc(var(--p) * -1) calc(var(--p) *  0);
+  animation: 
+    color var(--d) var(--e) infinite,
+    position var(--d) var(--e) infinite;
+  outline: none;
+  width: 100%;
+}
+.box{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+  border-radius: 10px;
+}
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box input[type = "email"],.box input[type = "password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "email"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+          
+.box #signIp{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+        
+.box #signOut{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid red;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+        
+.box #signIp:hover{
+  background: #2ecc71;
+}
+        
+.box #signOut:hover{
+  background: red;
+}
+          
+          
+@keyframes position {
+  0% {
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  0), 
+      calc(var(--p) * -1) calc(var(--p) *  1), 
+      calc(var(--p) *  1) calc(var(--p) * -1), 
+      calc(var(--p) * -1) calc(var(--p) *  0);
+  }
+  25% {
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  4), 
+      calc(var(--p) * -1) calc(var(--p) *  5), 
+      calc(var(--p) *  1) calc(var(--p) *  3), 
+      calc(var(--p) * -1) calc(var(--p) *  4);
+  }
+  50% {
+    background-position: 
+      calc(var(--p) *  3) calc(var(--p) * 8), 
+      calc(var(--p) * -3) calc(var(--p) * 9), 
+      calc(var(--p) *  2) calc(var(--p) * 7), 
+      calc(var(--p) * -2) calc(var(--p) * 8);
+  }
+  75% {
+    background-position: 
+      calc(var(--p) *  3) calc(var(--p) * 12), 
+      calc(var(--p) * -3) calc(var(--p) * 13), 
+      calc(var(--p) *  2) calc(var(--p) * 11), 
+      calc(var(--p) * -2) calc(var(--p) * 12);
+  }
+  100% {    
+    background-position: 
+      calc(var(--p) *  5) calc(var(--p) * 16), 
+      calc(var(--p) * -5) calc(var(--p) * 17), 
+      calc(var(--p) *  5) calc(var(--p) * 15), 
+      calc(var(--p) * -5) calc(var(--p) * 16);
+  }
+}
+      </style>
 
-  <div id="parent">
-    <div id="nav" class="nav">
-      <img class="nav__logo" src="images/duckfilms.png" alt="" />
-      <div>
-      <a href="https://duckfilms-suggestions.herokuapp.com/" class="button-submit">Dodaj sugestię</a>
-      <a href="send/todfmanager!suggestion=false!report=true!&redirect=UIgtyyu$vdV!%session=getsessid/" class="button-submit">Zgłoś błąd</a>
-      </div>
-    </div>
-    <div class="snowflakes-disabled"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
 
-    <header class="banner" id="banner">
-      <div class="banner__contents" id="banner_contents">
-        <h1 class="banner__title">Joker</h1>
-        <div class="banner__buttons">
-          <a href="player/joker/index.html"><button class="banner__button fadeOutLink" id="og">Oglądaj</button></a>
-
-        </div>
-        <h1 class="banner__description" id="desc">
-          Arthur Fleck nie ma łatwego życia. Dorabia na ulicach Gotham w roli klauna, ale natyka się na przybierający na intensywności społeczny ostracyzm, wliczając w to przemoc fizyczną. Próbuje śmiać się ze swej mizernej doli na scenie, licząc na karierę komika stand-upowego, ale widzowie z jakiegoś powodu nie chcą się śmiać...
-        </h1>
-      </div>
-          <div class="banner--fadeBottom" id="grad"></div>
-    </header>
-
-      <!-- Filmy Fantasy -->
-    <div class="row">
-      <h2>Filmy Fantasy</h2>
-      <div class="row__posters container">
-        <a id="item" class="item" href="show/Duckfilms-Harry-Potter-i-Kamie%C5%84-Filozoficzny.html"><img id="row__poster" class="row__poster" src="images/wp4879828-harry-potter-and-the-philosophers-stone-wallpapers.jpg"/></a>
-
-        <a id="item" class="item" href="show/Duckfilms-Harry-Potter-i-Komnata-Tajemnic.html"><img id="row__poster" class="row__poster" src="images/6744481.jpg"/></a>
-      </div>
-    </div>
-
-    <!-- Filmy Akcji -->
-    <div class="row">
-      <h2>Filmy Akcji</h2>
-      <div class="row__posters container">
-          <a id="item" class="item" href=""><img class="row__poster" id="row__poster" src="images/small-movie1.jpg"/></a>
-      </div>
-    </div>
-
-    <!-- Filmy Komediowe -->
-    <div class="row">
-      <h2>Filmy Komediowe</h2>
-      <div class="row__posters container">
-          <a id="item" class="item" href="player/mikolajek/1.html"><img class="row__poster" id="row__poster" src="images/mikolajek-tapety-na-pulpit-1.jpg"/></a>
-      </div>
-    </div>
-
-    <!-- Horrory -->
-    <div class="row">
-      <h2>Horrory</h2>
-      <div class="row__posters container">
-          <a id="item" class="item" href="player/hpkt/index.html"><img class="row__poster" id="row__poster" src="images/small-movie1.jpg"/></a>
-      </div>
-    </div>
-
-    <!-- Filmy Romantyczne -->
-    <div class="row">
-      <h2>Filmy Romantyczne</h2>
-      <div class="row__posters container">
-          <a id="item" class="item" href="player/hpkt/index.html"><img class="row__poster" id="row__poster" src="images/small-movie1.jpg"/></a>
-      </div>
-    </div>
-
-    <!-- Dokumenty -->
-    <div class="row">
-      <h2>Filmy Dokumentalne</h2>
-      <div class="row__posters container">
-          <a id="item" class="item" href="player/hpkt/index.html"><img class="row__poster" id="row__poster" src="images/small-movie1.jpg"/></a>
-      </div>
-    </div>
-
-      <!-- Seriale -->
-    <div class="row">
-      <h2>Seriale</h2>
-      <div class="row__posters container">
-        <a id="item" class="item" href="show/Duckfilms-Wodogrzmoty-Ma%C5%82e.html"><img class="row__poster" id="row__poster" src="images/675452.png"/></a>
-        <a id="item" class="item" href="show/Duckfilms-Asdf.html"><img class="row__poster" id="row__poster" src="images/wp7031169-asdfmovie-wallpapers.jpg"/></a>
-      </div>
-    </div>
-    <script>
-      const nav = document.getElementById('nav');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY >= 50) {
-          nav.classList.add('nav__black');
-        } else {
-          nav.classList.remove('nav__black');
-        }
-      });
-    </script>
-      <footer><p class="paragraph">TheDuck Studios
-Wszelkie prawa zastrzeżone.
-Filmy oraz seriale Duckfilms(Oprócz Duckfilms Originals) należą
-do osób/firm trzecich i mogą być używane tylko w sferze prywatnej. Logo Windows, nazwa Windows oraz czcionka loga Windows są
-zarejestrowanymi znakami handlowymi Microsoft Corporation</p></footer>
-      </div>
-  </body>
+    
+</body>
 </html>

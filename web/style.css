@@ -18,15 +18,12 @@ body {
   max-height: 200px;
   margin-right: 10px;
   transition: transform 450ms;
+  border-radius: 20px;
   opacity: 1;
   -webkit-animation: opa 8s ease;
     -moz-animation: opa 8s ease;
     -o-animation: opa 8s ease;
     animation: opa 8s ease;
-}
-
-.row__poster::before {
-
 }
 
 .parent {
@@ -251,12 +248,6 @@ body {
   flex: 0 0 auto;
 }
 
-.item:hover {
-  border: solid;
-  border-color: white;
-  border-width: 5px;
-  box-shadow: 0 0 1em white;
-}
 
 .container:focus-within .item,
 .container:hover .item {
@@ -268,6 +259,8 @@ body {
 .item:hover ~ .item {
   transform: translateX(10%);
   transition: 500ms;
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5);
 }
 
 .container .item:focus,
@@ -277,8 +270,6 @@ body {
 }
 
 .item:hover ~ .item:not(:hover) {
-  -webkit-filter: brightness(0.7);
-  filter: brightness(0.7);
   transition: 500ms;
 }
 

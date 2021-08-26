@@ -1,25 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="    viewport" content="width=device-width, initial-scale=1.0">
-
-<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<html>
+  <head>
+      <script type="text/javascript" src="scripts/login.js"></script>
+      <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+      <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+      <title>Logowanie</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
-<script src="form.js"></script>
-<script src="../../warning.js"></script>
-    <title>Logowanie</title>
-</head>
-<body>
-    <div class="formContainer box">
-    <h1>Logowanie</h1>
-    <input type="email" placeholder="Email" id="email">
-    <input type="password" placeholder="Hasło" id="password">
-    <button onclick="signIn()" id="signIp">Zaloguj się</button>
-    <button onclick="signOut()" id="signIp">Wyloguj się</button>
+  </head>
+  <body>
+        <script type="text/javascript"> var setTheme = localStorage.getItem('theme')
+		console.log('theme:', setTheme)
+		if (setTheme == null){
+			swapStyle('light.css')
+		}else{
+			swapStyle(setTheme)
+		}
+		function swapStyle(sheet){
+			document.getElementById('mystylesheet').href = sheet
+			localStorage.setItem('theme', sheet)
+		}
+		/*
+		var setTheme = localStorage.getItem('theme')
+		if (setTheme == null){
+			swapStyles('light.css')
+		}else{
+			swapStyles(setTheme)
+		}
+			
+		
+		function swapStyles(sheet){
+			document.getElementById('mystylesheet').href = sheet
+			localStorage.setItem('theme', sheet)
+		}
+		*/ </script>
+      
+  <div class="box formContainers">
+  <h1>Logowanie</h1>
+  <input type="email" name="userid" placeholder="Email" id="email">
+  <input type="password" name="pswrd" placeholder="Hasło" id="password">
+  <input type="button" name="login" value="Zaloguj się" onclick="signIn()">
 </div>
-    <style>
+      <style>
           body{
   margin: 0;
   padding: 0;
@@ -85,7 +109,7 @@
   border-color: #2ecc71;
 }
           
-.box #signIp{
+.box input[type = "button"]{
   border:0;
   background: none;
   display: block;
@@ -99,7 +123,7 @@
   transition: 0.25s;
   cursor: pointer;
 }
-.box #signIp:hover{
+.box input[type = "button"]:hover{
   background: #2ecc71;
 }
           
@@ -142,8 +166,5 @@
   }
 }
       </style>
-
-
-    
-</body>
+  </body>
 </html>

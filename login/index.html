@@ -17,7 +17,7 @@
     <input type="email" placeholder="Email" id="email">
     <input type="password" placeholder="Hasło" id="password">
     <button onclick="signIn()" id="signIp">Zaloguj się</button>
-    <button onclick="signOut()" id="signIp">Wyloguj się</button>
+    <button onclick="signOut()" id="signOut">Wyloguj się</button>
 </div>
     <style>
           body{
@@ -99,8 +99,28 @@
   transition: 0.25s;
   cursor: pointer;
 }
+        
+.box #signOut{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid red;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+        
 .box #signIp:hover{
   background: #2ecc71;
+}
+        
+.box #signOut:hover{
+  background: red;
 }
           
           

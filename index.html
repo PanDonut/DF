@@ -9,6 +9,10 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="log.js"></script>
+      <script type="text/javascript" src="warning.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
   </head>
   <body>
 
@@ -104,13 +108,6 @@
         }
       });
     </script>
-      <script>
-          ses = window.localStorage.getItem('session');
-          if(ses == null) {
-              window.location.replace('login/');
-          }
-          else {}
-      </script>
       <footer><p class="paragraph">TheDuck Studios
 Wszelkie prawa zastrzeżone.
 Filmy oraz seriale Duckfilms(Oprócz Duckfilms Originals) należą

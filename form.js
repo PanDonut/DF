@@ -24,7 +24,7 @@
     promise.catch(e=>alert(e.message));
     
       localStorage.setItem('session', 'true');
-      window.location.replace("../");
+      window.location.replace("web/");
   }
 
 

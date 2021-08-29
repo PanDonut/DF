@@ -259,8 +259,6 @@ body {
 .item:hover ~ .item {
   transform: translateX(10%);
   transition: 500ms;
-  -webkit-filter: brightness(0.5);
-  filter: brightness(0.5);
 }
 
 .container .item:focus,
@@ -271,6 +269,11 @@ body {
 
 .item:hover ~ .item:not(:hover) {
   transition: 500ms;
+}
+
+.item:not(:hover) {
+    -webkit-filter: brightness(0.5);
+  filter: brightness(0.5);
 }
 
 @keyframes fadeInAnimation {

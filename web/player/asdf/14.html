@@ -1,0 +1,210 @@
+<head>
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css"
+          rel="stylesheet" />
+
+    <!-- City -->
+    <link href="../player.css" rel="stylesheet" />
+    <link href="https://raw.githubusercontent.com/TylerZubke/Videojs-AFK-Monitor/master/dist/videojs.afk-monitor.min.css" rel="stylesheet">
+    <!-- Then, in the player -->
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+    <title>asdfmovie</title>
+</head>
+
+<body class="body" id="body">
+  <div class="ager">
+    <h2 class="redline">&#12644</h2>
+    <h1>Kategoria wiekowa 12+</h1>
+  </div>
+    <video id="my-video"
+           class="video-js vjs-theme-city video vjs-big-play-centered"
+           controls
+           preload="auto"
+           width="640"
+           height="264"
+           poster=""
+           data-setup="{}">
+        <source src="https://data.pandasuite.com/videos/60f1537d67c73d23b2000f20-universal_1920_1080_20_main_3-0.mp4" type="video/mp4" />
+        <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
+    </video>
+
+<button onclick="window.location.href='15.html'" class="next" id="next">Następny odcinek ➤</button>
+
+    <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+    <style>
+        .video {
+            width: 100%;
+            height: 100%;
+            transition: 2s;
+        }
+
+        .body {
+            background-color: black;
+            overflow: hidden;
+            transition: 2s;
+        }
+
+        .skip {
+            background-color: black;
+            overflow: hidden;
+            transition: 1s;
+        }
+
+        .fadebody {
+            background-color: black;
+            overflow: hidden;
+            transition: 1s;
+            opacity: 0;
+        }
+
+        .fadevid {
+            width: 100%;
+            height: 100%;
+            opacity: 0.4;
+        }
+    </style>
+    <script type="text/javascript">
+        var video = videojs('my-video');
+        video.AFKMonitor();
+    </script>
+
+    <style>
+        .next {
+            visibility: hidden;
+            position: fixed;
+            background-color: #292929;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            top: 75%;
+            right: 10px;
+            height: 40px;
+            border-color: #fff;
+            border: solid;
+            width: 200px;
+            transition: all 1s;
+        }
+        .nextactive {
+            visibility: visible;
+            background-color: #292929;
+            transition: 9s;
+            position: fixed;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            top: 75%;
+            right: 10px;
+            height: 40px;
+            border-color: #fff;
+            border: solid;
+            width: 200px;
+        }
+        .nextgo {
+            visibility: visible;
+            background-color: white;
+            transition: all 9s;
+            position: fixed;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            top: 75%;
+            right: 10px;
+            height: 40px;
+            border-color: #3e3e3e;
+            border: solid;
+            width: 200px;
+        }
+
+        .skipb {
+            visibility: visible;
+            background-color: white;
+            transition: 2s;
+            position: fixed;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            top: 50%;
+            right: 71%;
+            left: 39%;
+            bottom: 50%;
+            height: 100px;
+            border-color: #3e3e3e;
+            border: solid;
+            width: 360px;
+            font-size: 37px;
+        }
+
+        .nextgo:hover {
+            -webkit-animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+            cursor: pointer;
+        }
+
+        .nextactive:hover {
+            -webkit-animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+            cursor: pointer;
+        }
+
+        .vidnon {
+            background-color: black;
+        }
+
+
+        @-webkit-keyframes shadow-pop-bl {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+            box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: -1px 1px #3e3e3e, -2px 2px #3e3e3e, -3px 3px #3e3e3e, -4px 4px #3e3e3e, -5px 5px #3e3e3e, -6px 6px #3e3e3e, -7px 7px #3e3e3e, -8px 8px #3e3e3e;
+            box-shadow: -1px 1px #3e3e3e, -2px 2px #3e3e3e, -3px 3px #3e3e3e, -4px 4px #3e3e3e, -5px 5px #3e3e3e, -6px 6px #3e3e3e, -7px 7px #3e3e3e, -8px 8px #3e3e3e;
+    -webkit-transform: translateX(8px) translateY(-8px);
+            transform: translateX(8px) translateY(-8px);
+  }
+}
+@keyframes shadow-pop-bl {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+            box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: -1px 1px #3e3e3e, -2px 2px #3e3e3e, -3px 3px #3e3e3e, -4px 4px #3e3e3e, -5px 5px #3e3e3e, -6px 6px #3e3e3e, -7px 7px #3e3e3e, -8px 8px #3e3e3e;
+            box-shadow: -1px 1px #3e3e3e, -2px 2px #3e3e3e, -3px 3px #3e3e3e, -4px 4px #3e3e3e, -5px 5px #3e3e3e, -6px 6px #3e3e3e, -7px 7px #3e3e3e, -8px 8px #3e3e3e;
+    -webkit-transform: translateX(8px) translateY(-8px);
+            transform: translateX(8px) translateY(-8px);
+  }
+}
+    </style>
+    <script type='text/javascript'>
+    const next = document.getElementById('next')
+    const vid = document.getElementById('my-video')
+    const body = document.getElementById('body')
+    var myPlayer = videojs("my-videonan");
+     videojs("my-videonan").ready(function () {
+        myPlayer.on("ended", function () {
+        vid.classList.add('vidnon');
+        next.classList.add('nextactive');
+        next.classList.remove('next');
+        setTimeout(function(){ next.classList.add('nextgo');  }, 1000);
+        setTimeout(function(){ body.classList.add('skip'); next.classList.add('skipb');  }, 9000);
+        setTimeout(function(){ body.classList.add('fadebody');  }, 11000);
+        setTimeout(function(){ vid.classList.add('fadevid');  }, 500);
+        setTimeout(function(){ window.location.href='15.html';  }, 12000);
+     });
+}, 1000);
+</script>
+</body>

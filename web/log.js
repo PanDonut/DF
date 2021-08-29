@@ -15,7 +15,6 @@
 
   const auth =  firebase.auth();
 
-
   //signIN function
   function  signIn(){
     var email = document.getElementById("email");
@@ -24,7 +23,7 @@
     promise.catch(e=>alert(e.message));
     
       localStorage.setItem('session', 'true');
-      window.location.replace("web/");
+      window.location.replace("../");
   }
 
 
@@ -45,5 +44,6 @@
     }else{
       console.log("Nie znaleziono sesji")
       localStorage.setItem('session', 'null');
+      window.location.replace('login/');
     }
   })

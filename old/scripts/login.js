@@ -15,6 +15,16 @@
 
   const auth =  firebase.auth();
 
+  //signup function
+  function signUp(){
+    var email = document.getElementById("email");
+    var password = document.getElementById("password");
+
+    const promise = auth.createUserWithEmailAndPassword(email.value,password.value);
+    //
+    promise.catch(e=>alert(e.message));
+    alert("SignUp Successfully");
+  }
 
   //signIN function
   function  signIn(){
@@ -23,8 +33,6 @@
     const promise = auth.signInWithEmailAndPassword(email.value,password.value);
     promise.catch(e=>alert(e.message));
     
-      localStorage.setItem('session', 'true');
-      window.location.replace("web/");
   }
 
 
@@ -33,17 +41,15 @@
   function signOut(){
     auth.signOut();
     alert("SignOut Successfully from System");
-    localStorage.setItem('session', 'null');
   }
 
   //active user to homepage
   firebase.auth().onAuthStateChanged((user)=>{
     if(user){
       var email = user.email;
-      console.log("Użytkownik "+email + " aktywny");
+      alert("Active user "+email);
 
     }else{
-      console.log("Nie znaleziono sesji")
-      localStorage.setItem('session', 'null');
+      alert("No Active user Found")
     }
   })

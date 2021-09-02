@@ -7,9 +7,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #0d0c11;
   overflow-y: scroll;
-  animation: fadeInAnimation ease 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  opacity: 1;
+  transition: opacity .5s;
+  -webkit-animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both
 }
 
 .row__poster {
@@ -20,10 +20,10 @@ body {
   transition: transform 450ms;
   border-radius: 20px;
   opacity: 1;
-  -webkit-animation: opa 8s ease;
-    -moz-animation: opa 8s ease;
-    -o-animation: opa 8s ease;
-    animation: opa 8s ease;
+  -webkit-animation: opa 4.25s ease;
+    -moz-animation: opa 4.25s ease;
+    -o-animation: opa 4.25s ease;
+    animation: opa 4.25s ease;
 }
 
 .parent {
@@ -231,10 +231,10 @@ body {
   background: transparent;
     background-size: 400% 400%;
 
-    -webkit-animation: load 8s ease-in-out;
-    -moz-animation: load 8s ease-in-out;
-    -o-animation: load 8s ease-in-out;
-    animation: load 8s ease-in-out;
+    -webkit-animation: load 4s ease-in-out;
+    -moz-animation: load 4s ease-in-out;
+    -o-animation: load 4s ease-in-out;
+    animation: load 4s ease-in-out;
     border-radius: 0px;
     height: 210px;
     margin-left: 10px
@@ -428,10 +428,19 @@ body {
 	padding:7px 20px;
 	text-decoration:none;
     border-radius: 0.2vw;
+    transition: 1s background;
 }
+
 .button-submit:hover {
-	background-color:#d10000;
+    background: linear-gradient(131deg, #ff0000, #ff0000, #ff0000, #ffffff, #ff0000, #ff0000, #ff0000);
+    background-size: 1400% 1400%;
+
+    -webkit-animation: shineanim 5s ease infinite;
+    -moz-animation: shineanim 5s ease infinite;
+    animation: shineanim 5s ease infinite;
+    transition: 1s background;
 }
+
 .button-submit:active {
 	position:relative;
 	top:1px;
@@ -441,6 +450,16 @@ body {
     color: white;
     background-color: black;
     padding: 20px 20px 20px 20px;
+    opacity: .5;
+    transition: 0.4s;
+    transform: scale(0.95);
+}
+
+.paragraph:hover {
+    opacity: 1;
+    transition: 0.4s;
+    cursor: default;
+    transform: scale(1);
 }
 
 footer {
@@ -543,4 +562,24 @@ i:before { -webkit-transform: rotate(240deg); }
 
 .snowflakes-disabled {
   display: none;
+}
+
+@-webkit-keyframes scale-up-center{0%{opacity: 0;}25%{opacity: 0;}100%{opacity: 1;}}
+
+@keyframes slide {
+	0% {transform:translateX(-100%);}
+	100% {transform:translateX(100%);}
+}
+
+@-webkit-keyframes shineanim {
+    0%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes shineanim {
+    0%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes shineanim {
+    0%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }

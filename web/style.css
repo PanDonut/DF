@@ -24,6 +24,11 @@ body {
     -moz-animation: opa 4.25s ease;
     -o-animation: opa 4.25s ease;
     animation: opa 4.25s ease;
+    -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
 }
 
 .parent {
@@ -238,6 +243,11 @@ body {
     border-radius: 0px;
     height: 210px;
     margin-left: 10px
+        -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
 }
 
 .loadedd {
@@ -432,12 +442,12 @@ body {
 }
 
 .button-submit:hover {
-    background: linear-gradient(131deg, #ff0000, #ff0000, #ff0000, #ffffff, #ff0000, #ff0000, #ff0000);
-    background-size: 1400% 1400%;
+    background: linear-gradient(150deg, #ff0000, #ff0000, #ff0000, #ff0000, #ffffff, #ff0000, #ff0000, #ff0000, #ff0000);
+    background-size: 1500% 1500%;
 
-    -webkit-animation: shineanim 5s ease infinite;
-    -moz-animation: shineanim 5s ease infinite;
-    animation: shineanim 5s ease infinite;
+    -webkit-animation: shineanim 3s ease infinite;
+    -moz-animation: shineanim 3s ease infinite;
+    animation: shineanim 3s ease infinite;
     transition: 1s background;
 }
 

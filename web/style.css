@@ -249,6 +249,7 @@ body {
   -o-user-drag: none;
   user-drag: none;
     width: 350px;
+    margin-right: 10px;
 }
 
 .item img {

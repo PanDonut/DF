@@ -86,6 +86,7 @@ content:"";z-index:1;width:0;height:0;position:absolute;top:0;left:0;border-left
   animation-iteration-count: 1;
   margin-bottom: 1000px;
   opacity: 0;
+  text-align-last: left;
 }
 
 .ager {

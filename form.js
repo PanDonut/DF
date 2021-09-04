@@ -44,5 +44,6 @@
 
     }else{
       console.log("Nie znaleziono sesji")
+      localStorage.setItem('sesss', 'false');
     }
   })

@@ -90,10 +90,11 @@ content:"";z-index:1;width:0;height:0;position:absolute;top:0;left:0;border-left
 
 .ager {
   display: inline-block;
-  width: 230px;
+  width: 250px;
   position: absolute;
   z-index: 100000;
   height: 50px;
+  text-align-last: left;
 }
 
 .redline {

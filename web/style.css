@@ -250,6 +250,10 @@ body {
   user-drag: none;
 }
 
+.item img {
+    transition: 0.5s ease-in-out;
+}
+
 .loadedd {
   position: relative;
   display: inline-block;
@@ -281,9 +285,10 @@ body {
   transition: 500ms;
 }
 
-.item:not(:hover) {
-    -webkit-filter: brightness(0.5);
-  filter: brightness(0.5);
+.item:hover img {
+    transition: 0.5s ease-in-out;
+    -webkit-filter: brightness(0.4) grayscale(0%);
+  filter: brightness(0.4) grayscale(0%);
 }
 
 @keyframes fadeInAnimation {
@@ -592,4 +597,25 @@ i:before { -webkit-transform: rotate(240deg); }
 @keyframes shineanim {
     0%{background-position:100% 50%}
     100%{background-position:0% 50%}
+}
+
+.item h3 {
+    position: absolute;
+    top: 190px;
+    text-decoration: none;
+    color: #fff0;
+    transition: 0.5s;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+.item:hover h3 {
+    top: 140px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
 }

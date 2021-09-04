@@ -23,7 +23,7 @@
     const promise = auth.signInWithEmailAndPassword(email.value,password.value);
     promise.catch(e=>alert(e.message));
     
-      localStorage.setItem('session', 'true');
+      localStorage.setItem('sesss', 'true');
       window.location.replace("web/");
   }
 
@@ -33,7 +33,7 @@
   function signOut(){
     auth.signOut();
     alert("SignOut Successfully from System");
-    localStorage.setItem('session', 'null');
+    localStorage.setItem('sesss', 'false');
   }
 
   //active user to homepage

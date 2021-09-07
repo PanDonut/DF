@@ -22,9 +22,7 @@
     var password  = document.getElementById("password");
     const promise = auth.signInWithEmailAndPassword(email.value,password.value);
     promise.catch(e=>alert(e.message));
-    
-      localStorage.setItem('sesss', 'true');
-      window.location.replace("web/");
+    window.location.replace("web/");
   }
 
 
@@ -41,6 +39,7 @@
     if(user){
       var email = user.email;
       console.log("Użytkownik "+email + " aktywny");
+      localStorage.setItem('sesss', 'true');
 
     }else{
       console.log("Nie znaleziono sesji")

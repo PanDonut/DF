@@ -212,12 +212,10 @@
         document.addEventListener('contextmenu', event => event.preventDefault());
     </script>
     <script>
-        const timelo = playerInstance.currentTime;
-        const playerInstance = document.getElementById('my-video');
-        localStorage.setItem('resumeA', timelo);
-        const resumeAt = localStorage.getItem('resumeA');
-
-    playerInstance.currentTime(resumeAt);
-    return;
+        'use strict';
+        var player = videojs('my-video');
+        player.Resume({
+          uuid: 'foobar'
+        });
     </script>
 </body>

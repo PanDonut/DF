@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Duckfilms-Jaś Fasola: Nadciąga totalny kataklizm</title>
+<link rel="stylesheet" href="jftk.css" media="screen">
+    
+    <link rel="icon" href="images/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="../../fade.js"></script>
+</head>
+  <body>
+        <div id="parent">
+    <!-- nav -->
+    <div id="nav" class="nav">
+      <a href="../">
+      <img class="nav__logo" src="../images/duckfilms.png" alt="" />
+      </a>
+      <div>
+      <a href="https://films.theduck.cloudns.nz/" class="button-submit">Dodaj sugestię</a>
+      <a href="../send/bug/" class="button-submit">Zgłoś błąd</a>
+      </div>
+    </div>
+
+    <!-- header -->
+    <header class="banner">
+      <div class="banner__contents">  
+        <h1 class="banner__title">Jaś Fasola: Nadciąga totalny kataklizm</h1>
+        <div class="banner__buttons">
+          <a><button class="banner__button fadeOutLink" onclick="window.location.href = '../player/jftk/'">Oglądaj</button></a> 
+        </div>
+        <h1 class="banner__description">
+          Pechowy Jaś Fasola udaje się do Los Angeles z misją ochrony słynnego obrazu, ale jego niezdarność prowadzi do serii przezabawnych wpadek
+        </h1>
+      </div>
+      <div class="banner--fadeBottom"></div>
+    </header>
+            
+    <script>
+      const nav = document.getElementById('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 50) {
+          nav.classList.add('nav__black');
+        } else {
+          nav.classList.remove('nav__black');
+        }
+      });
+        
+      function scroll() {
+          var elmnt = document.getElementById("epp");
+elmnt.scrollIntoView();
+      }
+    </script>
+            
+      </div>
+  </body>
+</html>

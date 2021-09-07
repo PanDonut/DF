@@ -37,6 +37,10 @@ order:2;flex:8;font-size:1.75em
 .vjs-theme-city .vjs-fullscreen-control,.vjs-theme-city .vjs-picture-in-picture-control,.vjs-theme-city .vjs-volume-panel {
 order:3;flex:1
 }
+.vjs-volume-panel:focus {
+    outline: none;
+    box-shadow: none;
+}
 .vjs-theme-city .vjs-volume-panel:hover .vjs-volume-control.vjs-volume-horizontal {
 height:100%
 }

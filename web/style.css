@@ -631,12 +631,13 @@ i:before { -webkit-transform: rotate(240deg); }
     font-family: 'Raleway', sans-serif;
     width: 100%;
     text-align: center;
+    font-size: 17.4px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
 .item:hover h3 {
-    top: 140px;
+    top: 150px;
     text-align: center;
     text-decoration: none;
     color: #fff;

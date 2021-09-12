@@ -48,7 +48,7 @@ body {
 .banner {
   background-image: url('https://occ-0-53-1432.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABcBCzj4QgmJuLCJ4VE-AM-5DGNIrqfdFW5H63GgX4fFRK7tfwQHhj7tBf8ddfuA6mTebeFTIgFo_j2gEEOaS6sopBaK0.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: center 0px;
   color: white;
   object-fit: contain;
   height: 448px;

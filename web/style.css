@@ -75,6 +75,22 @@ body {
     -moz-animation: loadb 5s ease-in-out;
     -o-animation: loadb 5s ease-in-out;
     animation: loadb 5s ease-in-out;
+    position: relative;
+
+}
+
+.banner_not_scroll {
+  background: url('images/banner.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  object-fit: contain;
+  height: 100vh;
+  transition: ease-in-out 1s;
+  -webkit-animation: loadb 5s ease-in-out;
+    -moz-animation: loadb 5s ease-in-out;
+    -o-animation: loadb 5s ease-in-out;
+    animation: loadb 5s ease-in-out;
 
 }
 
@@ -142,8 +158,10 @@ body {
 }
 
 .banner--fadeBottom {
-  margin-top: 140px;
+  position: absolute;
+  bottom: 0px;
   height: 7.4rem;
+  width: 100%;
   background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
     transition: ease-in-out 1s;
     opacity: 1;
